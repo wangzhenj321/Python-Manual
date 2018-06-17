@@ -103,3 +103,39 @@ The `pass` statement does nothing.
 
 ## 4.6 Defining Functions
 
+```python
+>>> def fib(n):    # write Fibonacci series up to n
+...     """Print a Fibonacci series up to n."""
+...     a, b = 0, 1
+...     while a < n:
+...         print(a, end=' ')
+...         a, b = b, a+b
+...     print()
+...
+>>> # Now call the function we just defined:
+... fib(2000)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+```
+
+The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or *docstring*.
+
+global variables cannot be directly assigned a value within a function (unless named in a `global` statement).
+
+> The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using call by value (**where the value is always an object reference, not the value of the object**).
+
+---
+
+A function definition introduces the function name in the current symbol table. The value of the function name has a type that is recognized by the interpreter as a user-defined function. This value can be assigned to another name which can then also be used as a function. This serves as a general renaming mechanism.
+
+```python
+>>> fib
+<function fib at 10042ed0>
+>>> f = fib
+>>> f(100)
+0 1 1 2 3 5 8 13 21 34 55 89
+```
+
+---
+
+> In fact, even functions without a `return` statement do return a value, albeit a rather boring one. This value is called `None` (it’s a built-in name).
+
