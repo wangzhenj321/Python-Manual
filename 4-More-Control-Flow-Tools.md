@@ -31,7 +31,7 @@ defenestrate 12
 
 ---
 
-If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first make a copy. Iterating over a sequence does not implicitly make a copy. The slice notation makes this especially convenient:
+If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first make a copy. **Iterating over a sequence does not implicitly make a copy. The slice notation makes this especially convenient:**
 
 ```python
 >>>
@@ -60,11 +60,46 @@ range(-10, -100, -30)
   -10, -40, -70
 ```
 
-> The given end point is never part of the generated sequence.
+> **The given end point is never part of the generated sequence.**
 
-```
+```python
 >>> print(range(10))
 range(0, 10)
 ```
 
-> In many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. We say such an object is *iterable*.
+> **In many ways the object returned by range() behaves as if it is a list, but in fact it isn’t. We say such an object is iterable.**
+
+```python
+>>> list(range(5))
+[0, 1, 2, 3, 4]
+```
+## 4.4 `break` and `continue` Statements, and `else` Clauses on Loops
+
+Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the list (with `for`) or when the condition becomes false (with `while`), but not when the loop is terminated by a `break` statement.
+
+```python
+>>> for n in range(2, 10):
+...     for x in range(2, n):
+...         if n % x == 0:
+...             print(n, 'equals', x, '*', n//x)
+...             break
+...     else:
+...         # loop fell through without finding a factor
+...         print(n, 'is a prime number')
+...
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+```
+
+## 4.5 `pass` Statements
+
+The `pass` statement does nothing.
+
+## 4.6 Defining Functions
+
