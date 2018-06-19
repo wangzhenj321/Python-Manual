@@ -139,3 +139,76 @@ A function definition introduces the function name in the current symbol table. 
 
 > In fact, even functions without a `return` statement do return a value, albeit a rather boring one. This value is called `None` (it’s a built-in name).
 
+## 4.7 More on Defining Functions
+
+### 4.7.1 Default Argument Values
+
+```python
+def ask_ok(prompt, retries=4, reminder='Please try again!'):
+    ...
+```
+
+> The default values are evaluated at the point of function definition in the *defining scope*. The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.
+
+### 4.7.2 Keyword Arguments
+
+Functions can also be called using keyword arguments of the form `kwarg=value`.
+
+> In a function call, keyword arguments must follow positional arguments.
+
+When a final formal parameter of the form `**name` is present, it receives a dictionary containing all keyword arguments except for those corresponding to a formal parameter. This may be combined with a formal parameter of the form `*name` which receives a tuple containing the positional arguments beyond the formal parameter list. (`*name` must occur before `**name`.)
+
+### 4.7.3 Arbitrary Argument Lists
+
+Any formal parameters which occur after the `*args` parameter are ‘keyword-only’ arguments, meaning that they can only be used as keywords rather than positional arguments.
+
+```python
+>>> def concat(*args, sep="/"):
+...     return sep.join(args)
+...
+>>> concat("earth", "mars", "venus")
+'earth/mars/venus'
+>>> concat("earth", "mars", "venus", sep=".")
+'earth.mars.venus'
+```
+
+### 4.7.4 Unpacking Argument Lists
+
+Write the function call with the `*`\-operator to unpack the arguments out of a list or tuple:
+
+```python
+>>> list(range(3, 6))            # normal call with separate arguments
+[3, 4, 5]
+>>> args = [3, 6]
+>>> list(range(*args))            # call with arguments unpacked from a list
+[3, 4, 5]
+```
+
+Dictionaries can deliver keyword arguments with the `**`\-operator:
+
+```python
+>>> def parrot(voltage, state='a stiff', action='voom'):
+...     print("-- This parrot wouldn't", action, end=' ')
+...     print("if you put", voltage, "volts through it.", end=' ')
+...     print("E's", state, "!")
+...
+>>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+>>> parrot(**d)
+-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !
+```
+
+### 4.7.5 Lambda Expressions
+
+Small anonymous functions can be created with the `lambda` keyword. This function returns the sum of its two arguments: `lambda a, b: a+b`.
+
+### 4.7.6 Documentation Strings
+
+### 4.7.7 Function Annotations
+
+Function annotations are completely optional metadata information about the types used by user-defined functions.
+
+```python
+>>> def f(ham: str, eggs: str = 'eggs') -> str:
+```
+
+## 4.8 Intermezzo: Coding Style
