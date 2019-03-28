@@ -47,3 +47,17 @@ b = "9"
 c = concatenate(a, b)  // produces "99"
 d = add(a, b)          // produces 18
 ```
+
+# Compiled and Interpreted
+
+## Compiled
+
+**Compiled languages** are written in a code that can be executed directly on a computer's processor. A compiler is a special program that processes statements written in a particular programming language and turns them into machine language or "code" that a computer's processor uses.
+
+## Interpreted
+
+An **Interpreted language** is any programming language that isn't already in "machine code" prior to runtime. Unlike compiled languages , an interpreted language's translation doesn't happen beforehand. Translation occurs at the same time as the program is being executed.
+
+> Python as a programming language has no saying about if it's an compiled or interpreted programming language, only the implementation of it. The terms interpreted or compiled is not a property of the language but a property of the implementation. Python program runs directly from the source code. So Python will fall under byte code interpreted. The `.py` source code is first compiled to byte code as `.pyc`. This byte code can be interpreted (official CPython), or JIT compiled (PyPy). Python source code (.py) can be compiled to different byte code also like IronPython (.Net) or Jython (JVM). There are multiple implementations of Python language. The official one is a byte code interpreted one. There are byte code JIT compiled implementations too.
+> 
+> **As concluding remarks, Python(Cpython) is neither a true compiled time nor pure interpreted language but it is called interpreted language.**
