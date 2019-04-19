@@ -68,7 +68,31 @@ The following list comprehension will transpose rows and columns:
 
 ## `dict`
 
-- dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:
+It is best to think of a dictionary as a set of *key: value* pairs, with the requirement that **the keys are unique (within one dictionary)**.
+
+> 1. Key can be any immutable type.
+> 
+> 2. A pair of braces creates an empty dictionary: `{}`.
+
+There are few ways to create a dictionary shown as follows:
+
+1. `>>> b = {'one': 1, 'two': 2, 'three': 3}`
+
+2. `class dict(**kwarg)`
+
+    - `>>> a = dict(one=1, two=2, three=3)`
+    
+    - `>>> e = dict({'three': 3, 'one': 1, 'two': 2})`
+
+3. `class dict(mapping, **kwarg)`
+
+    - `>>> c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))`
+
+4. `class dict(iterable, **kwarg)`
+
+    - `>>> d = dict([('two', 2), ('one', 1), ('three', 3)])`
+
+5. dict comprehensions
 
     ```python
     >>> {x: x**2 for x in (2, 4, 6)}
