@@ -66,6 +66,10 @@ The following list comprehension will transpose rows and columns:
 
 > Be careful of the order of evaluating the inner and outer `for`s.
 
+## `str`
+
+
+
 ## `dict`
 
 It is best to think of a dictionary as a set of *key: value* pairs, with the requirement that **the keys are unique (within one dictionary)**.
