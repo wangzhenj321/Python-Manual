@@ -65,3 +65,12 @@ The following list comprehension will transpose rows and columns:
 ```
 
 > Be careful of the order of evaluating the inner and outer `for`s.
+
+## `dict`
+
+- dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:
+
+    ```python
+    >>> {x: x**2 for x in (2, 4, 6)}
+    {2: 4, 4: 16, 6: 36}
+    ```
