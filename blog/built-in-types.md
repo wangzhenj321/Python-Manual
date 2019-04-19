@@ -2,7 +2,7 @@
 
 ### List Comprehensions
 
-**List comprehensions provide a concise way to create lists.** A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.
+List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.
 
 For example, assume we want to create a list of squares, like:
 
