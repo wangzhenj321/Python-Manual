@@ -2,10 +2,6 @@
 
 - [`abs(x)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#abs)
 
-- [`all(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#all)
-
-- [`any(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#any)
-
 - [`divmod(a, b)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#divmod)
 
 - [`len(s)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#len)
@@ -17,8 +13,6 @@
 - [`pow(x, y[, z])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#pow)
 
 - [`round(number[, ndigits])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#round)
-
-- [`sum(iterable[, start])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#sum)
 
 ## For encoding
 
@@ -58,8 +52,6 @@
 
 - [`class object`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#object)
 
-- [`class property(fget=None, fset=None, fdel=None, doc=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#property)
-
 - [`class set([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-set)
 
 - [`class slice(stop)` or `class slice(start, stop[, step])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#slice)
@@ -67,8 +59,6 @@
 - [`class str(object='')` or `class str(object=b'', encoding='utf-8', errors='strict')`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-str)
 
 - [`tuple([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-tuple)
-
-- [`class type(object)` or `class type(name, bases, dict)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#type)
 
 ## For class
 
@@ -78,9 +68,13 @@
 
 - [`issubclass(class, classinfo)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#issubclass)
 
+- [`class property(fget=None, fset=None, fdel=None, doc=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#property)
+
 - [`@staticmethod`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#staticmethod)
 
 - [`super([type[, object-or-type]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#super)
+
+- [`class type(object)` or `class type(name, bases, dict)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#type)
 
 ## For attribute
 
@@ -102,6 +96,10 @@
 
 ## For iterable
 
+- [`all(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#all)
+
+- [`any(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#any)
+
 - [`enumerate(iterable, start=0)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#enumerate)
 
 - [`filter(function, iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#filter)
@@ -117,6 +115,8 @@
 - [`reversed(seq)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#reversed)
 
 - [`sorted(iterable, *, key=None, reverse=False)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#sorted)
+
+- [`sum(iterable[, start])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#sum)
 
 - [`zip(*iterables)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#zip)
 
