@@ -122,7 +122,7 @@
 
 ## For io
 
-- [input([prompt])](https://docs.python.org/3/library/functions.html?highlight=staticmethod#input)
+- [`input([prompt])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#input)
 
 - [`open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#open)
 
