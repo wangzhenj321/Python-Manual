@@ -98,3 +98,23 @@ There are few ways to create a dictionary shown as follows:
     >>> {x: x**2 for x in (2, 4, 6)}
     {2: 4, 4: 16, 6: 36}
     ```
+
+### Operations
+
+1. `d[key]` :vs: `get(key[, default])`
+
+2. `del d[key]`
+
+3. `key in d` :vs: `key not in d`
+
+4. `iter(d)`
+
+5. `clear()`
+
+6. 
+
+### References
+
+1. [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+
+2. [Mapping Types — `dict`](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
