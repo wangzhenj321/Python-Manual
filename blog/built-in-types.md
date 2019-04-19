@@ -101,17 +101,25 @@ There are few ways to create a dictionary shown as follows:
 
 ### Operations
 
-1. `d[key]` :vs: `get(key[, default])`
+1. `len(d)`
 
-2. `del d[key]`
+2. `d[key]` :vs: `get(key[, default])`
 
-3. `key in d` :vs: `key not in d`
+3. `d[key] = value` :vs: `setdefault(key[, default])` :vs: `update([other])`
 
-4. `iter(d)`
+4. `del d[key]`
 
-5. `clear()`
+5. `key in d` :vs: `key not in d`
 
-6. 
+6. `iter(d)`
+
+7. `clear()`
+
+8. `copy()`
+
+9. `items()` :vs: `keys()` :vs: `values()`
+
+10. `pop(key[, default])` :vs: `popitem()`
 
 ### References
 
