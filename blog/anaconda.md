@@ -6,25 +6,6 @@ Anaconda is a package manager, an environment manager, a Python/R data science d
 
 After you install Anaconda or Miniconda, if you prefer a desktop graphical user interface (GUI) then use **Navigator**. If you prefer to use Anaconda prompt (or Terminal on Linux or macOS), then use that and **conda**. You can also switch between them.
 
-## Packages available in Anaconda
-
-- Over 200 packages are automatically installed with Anaconda.
-
-- Over 2000 additional open source packages (including R) can be individually installed from the Anaconda repository with the `conda install` command.
-
-- Thousands of other packages are available from **Anaconda Cloud**.
-
-- You can download other packages using the `pip install` command that is installed with Anaconda. **Pip packages** provide many of the features of **conda packages** and in some cases they can work together. However, the preference should be to install the conda package if it is available.
-
-- You can also make your own custom packages using the `conda build` command, and you can share them with others by uploading them to Anaconda Cloud, PyPi or other repositories.
-
-## Updating from older versions
-
-```
-conda update conda
-conda update anaconda
-```
-
 ## Uninstalling Anaconda
 
 1. Option A. Use simple remove to uninstall Anaconda:
@@ -41,3 +22,26 @@ conda update anaconda
     ```
     
     After using Anaconda-Clean, follow the instructions above in Option A to uninstall Anaconda.
+
+## conda or pip?
+
+> Having been involved in the python world for so long, we are all aware of pip, easy_install, and virtualenv, but these tools did not meet all of our specific requirements. The main problem is that they are focused around Python, neglecting non-Python library dependencies, such as HDF5, MKL, LLVM, etc., which do not have a setup.py in their source code and also do not install files into Python’s site-packages directory.
+
+So Conda is a packaging tool and installer that aims to do more than what pip does; handle library dependencies outside of the Python packages as well as the Python packages themselves. Conda also creates a virtual environment, like `virtualenv` does.
+
+Because Conda introduces a new packaging format, you cannot use pip and Conda interchangeably; pip cannot install the Conda package format. **You can use the two tools side by side (by installing pip with conda install pip) but they do not interoperate either.**
+
+## Error of `conda activate` on Windows
+
+The usage of `conda activate python36` on Windows results in the following error:
+
+```
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+```
+
+The solution to this error is to run the following two commands on terminal. It's better to write them into `.bash_profile` or `.bashrc` file.
+
+```
+source activate
+source deactivate
+```
