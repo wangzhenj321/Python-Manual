@@ -18,6 +18,8 @@
 
 > **You don't play around with another class's variables that look like `__foo` or `_bar`.**
 
+> Name mangling is intended to give classes an easy way to define “private” instance variables and methods, without having to worry about instance variables defined by derived classes, or mucking with instance variables by code outside the class. **Note that the mangling rules are designed mostly to avoid accidents; it still is possible for a determined soul to access or modify a variable that is considered private.**
+
 ## double leading and trailing underscore
 
 `__double_leading_and_trailing_underscore__`: "magic" objects or attributes that live in user-controlled namespaces. E.g. `__init__`,  `__import__` or `__file__`. **Never invent such names; only use them as documented.**
@@ -29,3 +31,5 @@
 1. [What is the difference in python attributes with underscore in front and back ](https://stackoverflow.com/questions/14671487/what-is-the-difference-in-python-attributes-with-underscore-in-front-and-back)
 
 2. [Does Python have “private” variables in classes?](https://stackoverflow.com/questions/1641219/does-python-have-private-variables-in-classes)
+
+3. [What is the meaning of a single and a double underscore before an object name?](https://stackoverflow.com/questions/1301346/what-is-the-meaning-of-a-single-and-a-double-underscore-before-an-object-name)
