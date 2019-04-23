@@ -1,5 +1,3 @@
-> **You don't play around with another class's variables that look like `__foo` or `_bar`.**
-
 ## single leading underscore
 
 `_single_leading_underscore`: weak "internal use" indicator. E.g. `from M import *` does not import objects whose name starts with an underscore.
@@ -17,6 +15,8 @@
 > This one actually has syntactical significance. Referring to `self.__var1` from within the scope of your class invokes name mangling. From outside your class, the variable will appear to be at `self._YourClassName__var1` instead of `self.__var1`. Not everyone uses this - we don't at all where I work - and for simple classes it feels like a slightly absurd and irritating alternative to using a single leading underscore.
 > 
 > However, there is a justification for it existing; if you're using lots of inheritance, **if you only use single leading underscores then you don't have a way of indicating to somebody reading your code the difference between 'private' and 'protected' variables** - ones that aren't even meant to be accessed by subclasses, and ones that subclasses may access but that the outside world may not. Using a single trailing underscore to mean 'protected' and a double underscore to mean 'private' may therefore be a useful convention in this situation (and the name mangling will allow a subclasses to use a variable with the same name in their subclass without causing a collision).
+
+> **You don't play around with another class's variables that look like `__foo` or `_bar`.**
 
 ## double leading and trailing underscore
 
