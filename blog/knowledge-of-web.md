@@ -21,3 +21,7 @@ A simple response from the server contains the following components:
 - A message body which is optional.
 
 All the lines in the server response should end with a carriage return and line feed. Similar to request, the empty line in a response also should only have carriage return and line feed without any spaces.
+
+## References
+
+1. [What is HTTP, Structure of HTTP Request and Response?](https://www.webnots.com/what-is-http/)
