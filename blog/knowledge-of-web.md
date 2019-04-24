@@ -5,11 +5,8 @@
 A simple request message from a client computer consists of the following components:
 
 - A request line to get a required resource, for example a request GET /content/page1.html is requesting a resource called /content/page1.html from the server.
-
 - Headers (Example – Accept-Language: EN).
-
 - An empty line.
-
 - A message body which is optional.
 
 All the lines should end with a carriage return and line feed. The empty line should only contains carriage return and line feed without any spaces.
