@@ -72,4 +72,33 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 ## `ArgumentParser.parse_args`
 
+| Parameters | Description |
+| --- | --- |
+| args | List of strings to parse. The default is taken from `sys.argv`. |
+| namespace | An object to take the attributes. The default is a new empty `Namespace` object. |
 
+## `class argparse.Namespace`
+
+**Example 1**
+
+```python
+>>> parser = argparse.ArgumentParser()
+>>> parser.add_argument('--foo')
+>>> args = parser.parse_args(['--foo', 'BAR'])
+>>> vars(args)
+{'foo': 'BAR'}
+```
+
+**Example 2**
+
+```python
+>>> class C:
+...     pass
+...
+>>> c = C()
+>>> parser = argparse.ArgumentParser()
+>>> parser.add_argument('--foo')
+>>> parser.parse_args(args=['--foo', 'BAR'], namespace=c)
+>>> c.foo
+'BAR'
+```
