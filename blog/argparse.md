@@ -1,3 +1,61 @@
 The program defines what arguments it requires, and `argparse` will figure out how to parse those out of `sys.argv`.
 
 > The `argparse` module also automatically generates help and usage messages and issues errors when users give the program invalid arguments.
+
+# Workflow
+
+## Step 1: Creating a parser
+
+The first step in using the `argparse` is creating an `ArgumentParser` object:
+
+```python
+>>> parser = argparse.ArgumentParser(description='Process some integers.')
+```
+
+## Step 2: Adding arguments
+
+The calls to `add_argument()` tell the `ArgumentParser` how to take the strings on the command line and turn them into objects.
+
+```python
+>>> parser.add_argument('integers', metavar='N', type=int, nargs='+',
+...                     help='an integer for the accumulator')
+>>> parser.add_argument('--sum', dest='accumulate', action='store_const',
+...                     const=sum, default=max,
+...                     help='sum the integers (default: find the max)')
+```
+
+## Step 3: Parsing arguments
+
+`ArgumentParser` parses arguments through the `parse_args()` method.
+
+```python
+>>> parser.parse_args(['--sum', '7', '-1', '42'])
+Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
+```
+
+# Attributes
+
+## `class argparse.ArgumentParser`
+
+> All parameters should be passed as keyword arguments.
+
+| Parameters | Description |
+| --- | --- |
+| prog | The name of the program (default: `sys.argv[0]`) |
+| usage | The string describing the program usage (default: generated from arguments added to parser) |
+| description | Text to display before the argument help (default: none) |
+| epilog | Text to display after the argument help (default: none) |
+| parents | A list of ArgumentParser objects whose arguments should also be included |
+| formatter_class | A class for customizing the help output |
+| prefix_chars | The set of characters that prefix optional arguments (default: '-') |
+| fromfile_prefix_chars | The set of characters that prefix files from which additional arguments should be read (default: None) |
+| argument_default | The global default value for arguments (default: None) |
+| conflict_handler | The strategy for resolving conflicting optionals (usually unnecessary) |
+| add_help | Add a `-h/--help` option to the parser (default: True) |
+| allow_abbrev | Allows long options to be abbreviated if the abbreviation is unambiguous. (default: True) |
+
+## `ArgumentParser.add_argument`
+
+
+
+## ``
