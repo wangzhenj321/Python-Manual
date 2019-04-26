@@ -26,7 +26,7 @@ This module defines classes which implement the client side of the HTTP and HTTP
 
 # Attributes
 
-## `class http.client.HTTPConnection` or `class http.client.HTTPSConnection`
+## `class http.client.HTTPConnection` (`HTTPSConnection`)
 
 - `HTTPConnection.request(method, url, body=None, headers={}, *, encode_chunked=False)`
 - `HTTPConnection.getresponse()`
