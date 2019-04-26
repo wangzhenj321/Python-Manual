@@ -80,19 +80,22 @@
 
 - [`delattr(object, name)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#delattr)
 
-- [`dir([object])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#dir)
-
 - [`getattr(object, name[, default])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#getattr)
-
-- [`globals()`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#globals)
 
 - [`hasattr(object, name)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#hasattr)
 
-- [`locals()`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#locals)
-
 - [`setattr(object, name, value)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#setattr)
 
+---
+
+- [`dir([object])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#dir)
+
 - [`vars([object])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#vars)
+
+- [`locals()`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#locals)
+
+- [`globals()`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#globals)
+
 
 ## For iterable
 
