@@ -32,7 +32,7 @@ The request/status line and headers must all end with `<CR><LF>` (that is, a car
 | Content-Type | The MIME type of this content | `Content-Type: text/html; charset=utf-8` |
 | Transfer-Encoding | The form of encoding used to safely transfer the entity to the user. | `Transfer-Encoding: chunked` |
 
-> `Transfer-Encoding`: refer to https://imququ.com/post/transfer-encoding-header-in-http.md
+> `Transfer-Encoding`: refer to https://imququ.com/post/transfer-encoding-header-in-http.html
 
 ## HTTP status codes
 
