@@ -37,6 +37,8 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 ## `class argparse.ArgumentParser`
 
+Create a new `ArgumentParser` object.
+
 > All parameters should be passed as keyword arguments.
 
 | Parameters | Description |
@@ -56,6 +58,8 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 ## `ArgumentParser.add_argument`
 
+Define how a single command-line argument should be parsed.
+
 | Parameters | Description |
 | --- | --- |
 | name or flags | Either a name or a list of option strings, e.g. `foo` or `-f, --foo`. |
@@ -72,12 +76,16 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 ## `ArgumentParser.parse_args`
 
+Convert argument strings to objects and assign them as attributes of the namespace. Return the populated namespace.
+
 | Parameters | Description |
 | --- | --- |
 | args | List of strings to parse. The default is taken from `sys.argv`. |
 | namespace | An object to take the attributes. The default is a new empty `Namespace` object. |
 
 ## `class argparse.Namespace`
+
+Simple class used by default by `parse_args()` to create an object holding attributes and return it.
 
 **Example 1**
 
