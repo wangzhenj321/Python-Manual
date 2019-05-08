@@ -45,3 +45,5 @@
 - `os.path.split(path)`
 - `os.path.splitdrive(path)`
 - `os.path.splitext(path)`
+
+    Split the pathname path into a pair `(root, ext)` such that `root + ext == path`, and ext is empty or begins with a period and contains at most one period. Leading periods on the basename are ignored; `splitext('.cshrc')` returns `('.cshrc', '')`.
