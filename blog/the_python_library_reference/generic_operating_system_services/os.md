@@ -6,18 +6,18 @@
 > - paths relative to directory descriptors
 > - not following symlinks
 
-- `os.chdir`
+- `os.chdir(path)`
 
     Change the current working directory to path.
 
-- `os.getcwd`
+- `os.getcwd()`
 
     Return a string representing the current working directory.
 
-- `os.listdir`
+- `os.listdir(path='.')`
 
     Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order, and does not include the special entries `'.'` and `'..'` even if they are present in the directory.
 
-- `os.rename`
+- `os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)`
 
     Rename the file or directory src to dst.
