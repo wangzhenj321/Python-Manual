@@ -42,6 +42,9 @@
 ---
 
 - `os.path.join(path, *paths)`
+
+    Join one or more path components intelligently.
+
 - `os.path.split(path)`
 - `os.path.splitdrive(path)`
 - `os.path.splitext(path)`
