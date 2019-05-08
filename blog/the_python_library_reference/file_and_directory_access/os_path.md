@@ -8,6 +8,11 @@
 - `os.path.basename(path)`
 - `os.path.dirname(path)`
 - `os.path.expanduser(path)`
+
+    On Unix and Windows, return the argument with an initial component of `~` or `~user` replaced by that user’s home directory.
+    
+    > If the expansion fails or if the path does not begin with a tilde, the path is returned unchanged.
+
 - `os.path.expandvars(path)`
 - `os.path.getsize(path)`
 - `os.path.normcase(path)`
@@ -32,6 +37,11 @@
 ---
 
 - `os.path.exists(path)`
+
+    Return **True** if path refers to an existing path or an open file descriptor. Returns **False** for broken symbolic links.
+    
+    > On some platforms, this function may return **False** if permission is not granted to execute `os.stat()` on the requested file, even if the path physically exists.
+
 - `os.path.lexists(path)`
 - `os.path.isabs(path)`
 - `os.path.isfile(path)`
