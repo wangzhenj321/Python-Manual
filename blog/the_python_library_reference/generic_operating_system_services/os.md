@@ -22,6 +22,10 @@
 
     Create a directory named path with numeric mode mode. If the directory already exists, `FileExistsError` is raised.
 
+- `os.makedirs(name, mode=0o777, exist_ok=False)`
+
+    Recursive directory creation function. Like `mkdir()`, but makes all intermediate-level directories needed to contain the leaf directory.
+
 - `os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)`
 
     Rename the file or directory src to dst.
