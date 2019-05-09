@@ -6,32 +6,25 @@
 > - paths relative to directory descriptors
 > - not following symlinks
 
-- `os.chdir(path)`
+- [`os.chdir(path)`](https://docs.python.org/3/library/os.html#os.chdir)
 
-    Change the current working directory to path.
+- [`os.getcwd()`](https://docs.python.org/3/library/os.html#os.getcwd)
 
-- `os.getcwd()`
+- [`os.listdir(path='.')`](https://docs.python.org/3/library/os.html#os.listdir)
 
-    Return a string representing the current working directory.
+- **mkdir**
+    - [`os.mkdir(path, mode=0o777, *, dir_fd=None)`](https://docs.python.org/3/library/os.html#os.mkdir)
+    - [`os.makedirs(name, mode=0o777, exist_ok=False)`](https://docs.python.org/3/library/os.html#os.makedirs)
 
-- `os.listdir(path='.')`
+- **rename**
+    - [`os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)`](https://docs.python.org/3/library/os.html#os.rename)
+    - [`os.renames(old, new)`](https://docs.python.org/3/library/os.html#os.renames)
 
-    Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order, and does not include the special entries `'.'` and `'..'` even if they are present in the directory.
-
-- `os.mkdir(path, mode=0o777, *, dir_fd=None)`
-
-    Create a directory named path with numeric mode mode. If the directory already exists, `FileExistsError` is raised.
-
-- `os.makedirs(name, mode=0o777, exist_ok=False)`
-
-    Recursive directory creation function. Like `mkdir()`, but makes all intermediate-level directories needed to contain the leaf directory.
-
-- `os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)`
-
-    Rename the file or directory src to dst.
+- **remove**
+    - [`os.remove(path, *, dir_fd=None)`](https://docs.python.org/3/library/os.html#os.remove)
+    - [`os.removedirs(name)`](https://docs.python.org/3/library/os.html#os.removedirs)
+    - [`os.rmdir(path, *, dir_fd=None)`](https://docs.python.org/3/library/os.html#os.rmdir)
 
 ## Miscellaneous System Information
 
-- `os.pardir`
-
-    The constant string used by the operating system to refer to the parent directory. This is `'..'` for Windows and POSIX. Also available via `os.path`.
+- [`os.pardir`](https://docs.python.org/3/library/os.html#os.pardir)
