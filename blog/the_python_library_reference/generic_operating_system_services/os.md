@@ -29,3 +29,9 @@
 - `os.rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)`
 
     Rename the file or directory src to dst.
+
+## Miscellaneous System Information
+
+- `os.pardir`
+
+    The constant string used by the operating system to refer to the parent directory. This is `'..'` for Windows and POSIX. Also available via `os.path`.
