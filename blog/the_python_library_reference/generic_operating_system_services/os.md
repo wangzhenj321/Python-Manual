@@ -25,6 +25,8 @@
     - [`os.removedirs(name)`](https://docs.python.org/3/library/os.html#os.removedirs)
     - [`os.rmdir(path, *, dir_fd=None)`](https://docs.python.org/3/library/os.html#os.rmdir)
 
+- [`os.system(command)`](https://docs.python.org/3/library/os.html#os.system)
+
 ## Miscellaneous System Information
 
 - [`os.pardir`](https://docs.python.org/3/library/os.html#os.pardir)
