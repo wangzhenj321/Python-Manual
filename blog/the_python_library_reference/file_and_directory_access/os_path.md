@@ -2,6 +2,12 @@
 
 > All of these functions accept either only bytes or only string objects as their parameters. The result is an object of the same type, if a path or file name is returned.
 
+> The `os.path` module is always the path module suitable for the operating system Python is running on, and therefore usable for local paths. However, you can also import and use the individual modules if you want to manipulate a path that is always in one of the different formats. They all have the same interface:
+> 
+> - `posixpath` for UNIX-style paths
+> - `ntpath` for Windows paths
+> - `macpath` for old-style MacOS paths
+
 ## Attributes
 
 - `os.path.abspath(path)`
@@ -34,27 +40,16 @@
 - `os.path.getmtime(path)`
 - `os.path.getctime(path)`
 
----
+- **is_exist**
 
-- `os.path.exists(path)`
+    - [`os.path.exists(path)`](https://docs.python.org/3/library/os.path.html#os.path.exists)
+    - [`os.path.isabs(path)`](https://docs.python.org/3/library/os.path.html#os.path.isabs)
+    - [`os.path.isfile(path)`](https://docs.python.org/3/library/os.path.html#os.path.isfile)
+    - [`os.path.isdir(path)`](https://docs.python.org/3/library/os.path.html#os.path.isdir)
+    - [`os.path.islink(path)`](https://docs.python.org/3/library/os.path.html#os.path.islink)
+    - [`os.path.ismount(path)`](https://docs.python.org/3/library/os.path.html#os.path.ismount)
 
-    Return **True** if path refers to an existing path or an open file descriptor. Returns **False** for broken symbolic links.
-    
-    > On some platforms, this function may return **False** if permission is not granted to execute `os.stat()` on the requested file, even if the path physically exists.
+- **join or split**
 
-- `os.path.lexists(path)`
-- `os.path.isabs(path)`
-- `os.path.isfile(path)`
-- `os.path.isdir(path)`
-- `os.path.islink(path)`
-- `os.path.ismount(path)`
-
----
-
-- `os.path.join(path, *paths)`
-
-    Join one or more path components intelligently.
-
-- `os.path.splitext(path)`
-
-    Split the pathname path into a pair `(root, ext)` such that `root + ext == path`, and ext is empty or begins with a period and contains at most one period. Leading periods on the basename are ignored; `splitext('.cshrc')` returns `('.cshrc', '')`.
+    - [`os.path.join(path, *paths)`](https://docs.python.org/3/library/os.path.html#os.path.join)
+    - [`os.path.splitext(path)`](https://docs.python.org/3/library/os.path.html#os.path.splitext)
