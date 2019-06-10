@@ -1,3 +1,19 @@
+## Standard levels
+
+1. DEBUG :arrow_forward: `debug()`
+2. INFO :arrow_forward: `info()`
+3. WARNING :arrow_forward: `warning()`
+4. ERROR :arrow_forward: `error()`
+5. CRITICAL :arrow_forward: `critical()`
+
+## Default logger
+
+1. The default logger is `root`.
+2. The default format is the level name, logger name, and message seperated by a colon.
+3. By default, the logging module logs the messages with a severity level of WARNING or above.
+
+## 
+
 ## References
 
 1. [Logging in Python](https://realpython.com/python-logging/)
