@@ -67,3 +67,27 @@ This table summarizes the typical usage of each parser library:
 ## Navigating the tree
 
 ## Searching the tree
+
+- `find_all()`
+
+    > `find_all(name, attrs, recursive, string, limit, **kwargs)`
+    
+    - The `name` argument
+    
+        Pass in a value for `name` and you’ll tell Beautiful Soup to only consider tags with certain names. Text strings will be ignored, as will tags whose names that don’t match.
+        
+        ```python
+        soup.find_all("title")
+        # [<title>The Dormouse's story</title>]
+        ```
+    
+    - The keyword arguments
+    
+        Any argument that’s not recognized will be turned into a filter on one of a tag’s attributes.
+        
+        ```python
+        soup.find_all(id='link2')
+        # [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+        data_soup.find_all(attrs={"data-foo": "value"})
+        # [<div data-foo="value">foo!</div>]
+        ```
