@@ -1,3 +1,15 @@
+**Table of Contents**
+
+- [Installing a parser]()
+
+- [Making the soup]()
+
+- [Kinds of objects]()
+
+- [Navigating the tree]()
+
+- [Searching the tree]()
+
 ## Installing a parser
 
 1. HTML parser
