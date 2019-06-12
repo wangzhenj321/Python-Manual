@@ -2,7 +2,7 @@
 
 1. HTML parser
 
-    Beautiful Soup supports the HTML parser included in Python’s standard library.
+    Beautiful Soup supports the HTML parser included in Python's standard library.
 
 2. lxml parser
 
@@ -74,7 +74,7 @@ This table summarizes the typical usage of each parser library:
     
     - The `name` argument
     
-        Pass in a value for `name` and you’ll tell Beautiful Soup to only consider tags with certain names. Text strings will be ignored, as will tags whose names that don’t match.
+        Pass in a value for `name` and you'll tell Beautiful Soup to only consider tags with certain names. Text strings will be ignored, as will tags whose names that don't match.
         
         ```python
         soup.find_all("title")
@@ -83,11 +83,16 @@ This table summarizes the typical usage of each parser library:
     
     - The keyword arguments
     
-        Any argument that’s not recognized will be turned into a filter on one of a tag’s attributes.
+        If you pass in a value for an argument called `id`, Beautiful Soup will filter against each tag's `id` attribute:
         
         ```python
         soup.find_all(id='link2')
         # [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+        ```
+        
+        You can use these attributes in searches by putting them into a dictionary and passing the dictionary into `find_all()` as the `attrs` argument:
+        
+        ```python
         data_soup.find_all(attrs={"data-foo": "value"})
         # [<div data-foo="value">foo!</div>]
         ```
