@@ -1,14 +1,14 @@
 **Table of Contents**
 
-- [Installing a parser]()
+- [Installing a parser](#installing-a-parser)
 
-- [Making the soup]()
+- [Making the soup](#making-the-soup)
 
-- [Kinds of objects]()
+- [Kinds of objects](#kinds-of-objects)
 
-- [Navigating the tree]()
+- [Navigating the tree](#navigating-the-tree)
 
-- [Searching the tree]()
+- [Searching the tree](#searching-the-tree)
 
 ## Installing a parser
 
