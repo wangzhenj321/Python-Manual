@@ -13,33 +13,35 @@
     - **Global** refers to the uppermost level of the executing script itself, and
     - **Built-in** are special names that Python reserves for itself.
 
-## Example 1
+## Example 1: Local and Global scopes
 
-```python
-i = 1
+- **Case 1**
 
-def foo():
-    i = 5
-    print(i, 'in foo()')
+    ```python
+    i = 1
 
-print(i, 'global')
+    def foo():
+        i = 5
+        print(i, 'in foo()')
 
-foo()
-```
+    print(i, 'global')
 
-## Example 2
+    foo()
+    ```
 
-```python
-a_var = 'global variable'
+- **Case 2**
 
-def a_func():
-    print(a_var, '[ a_var inside a_func() ]')
+    ```python
+    a_var = 'global variable'
 
-a_func()
-print(a_var, '[ a_var outside a_func() ]')
-```
+    def a_func():
+        print(a_var, '[ a_var inside a_func() ]')
 
-## Example 3: `global`
+    a_func()
+    print(a_var, '[ a_var outside a_func() ]')
+    ```
+
+## Example 2: `global`
 
 ```python
 a_var = 'global value'
@@ -54,20 +56,7 @@ a_func()
 print(a_var, '[ a_var outside a_func() ]')
 ```
 
-## Example 4: UnboundLocalError
-
-```python
-a_var = 1
-
-def a_func():
-    a_var = a_var + 1
-    print(a_var, '[ a_var inside a_func() ]')
-
-print(a_var, '[ a_var outside a_func() ]')
-a_func()
-```
-
-## Example 5: `nonlocal`
+## Example 3: `nonlocal`
 
 ```python
 a_var = 'global value'
@@ -85,22 +74,37 @@ def outer():
 outer()
 ```
 
-## Example 6: UnboundLocalError
+## Example 4: UnboundLocalError
 
-```python
-global_var = 'foo'
+- **Case 1**
 
-def ex1():
-    local_var = 'bar'
-    print('locals(): ', locals())
-    print(global_var)
-    print(local_var)
-    global_var = 'foo2'
+    ```python
+    a_var = 1
 
-ex1()
-```
+    def a_func():
+        a_var = a_var + 1
+        print(a_var, '[ a_var inside a_func() ]')
 
-## Example 7: free variable
+    print(a_var, '[ a_var outside a_func() ]')
+    a_func()
+    ```
+
+- **Case 2**
+
+    ```python
+    global_var = 'foo'
+
+    def ex1():
+        local_var = 'bar'
+        print('locals(): ', locals())
+        print(global_var)
+        print(local_var)
+        global_var = 'foo2'
+
+    ex1()
+    ```
+
+## Example 5: free variable
 
 > A **free variable** is not defined in the current environment, i. e. collection of local variables, and is also not a global variable!
 
@@ -113,7 +117,7 @@ def bar():
     foo()
 ```
 
-## References
+# References
 
 1. [A Beginner's Guide to Python's Namespaces, Scope Resolution, and the LEGB Rule](https://sebastianraschka.com/Articles/2014_python_scope_and_namespaces.html)
 2. [How to define free-variable in python?](https://stackoverflow.com/questions/12919278/how-to-define-free-variable-in-python)
