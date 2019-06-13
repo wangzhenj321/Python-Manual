@@ -96,8 +96,6 @@
 
 - [`globals()`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#globals)
 
-    Return a dictionary representing the current global symbol table. This is always the dictionary of the current module (inside a function or method, this is the module where it is defined, not the module from which it is called).
-
 ## For iterable
 
 - [`all(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#all)
