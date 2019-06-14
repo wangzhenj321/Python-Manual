@@ -38,31 +38,37 @@
 
 ## For built-in types
 
+- [`class object`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#object)
+
+---
+
 - [`class bool([x])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#bool)
+
+- [`class complex([real[, imag]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#complex)
+
+- [`class float([x])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#float)
+
+- [`class int([x])` or `class int(x, base=10)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#int)
+
+---
 
 - [`class bytearray([source[, encoding[, errors]]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-bytearray)
 
 - [`class bytes([source[, encoding[, errors]]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-bytes)
 
-- [`class complex([real[, imag]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#complex)
+- [`class str(object='')` or `class str(object=b'', encoding='utf-8', errors='strict')`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-str)
+
+---
 
 - [`class dict(**kwarg)` or `class dict(mapping, **kwarg)` or `class dict(iterable, **kwarg)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-dict)
 
-- [`class float([x])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#float)
-
 - [`class frozenset([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-frozenset)
 
-- [`class int([x])` or `class int(x, base=10)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#int)
-
 - [`class list([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-list)
-
-- [`class object`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#object)
 
 - [`class set([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-set)
 
 - [`class slice(stop)` or `class slice(start, stop[, step])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#slice)
-
-- [`class str(object='')` or `class str(object=b'', encoding='utf-8', errors='strict')`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-str)
 
 - [`tuple([iterable])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-tuple)
 
