@@ -4,8 +4,6 @@
 
 - [`divmod(a, b)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#divmod)
 
-- [`len(s)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#len)
-
 - [`max(iterable, *[, key, default])` or `max(arg1, arg2, *args[, key])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#max)
 
 - [`min(iterable, *[, key, default])` or `min(arg1, arg2, *args[, key])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#min)
@@ -14,21 +12,29 @@
 
 - [`round(number[, ndigits])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#round)
 
+---
+
+- [`len(s)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#len)
+
 ## For encoding
 
 - [`ascii(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#ascii)
 
+- [`repr(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#repr)
+
+---
+
 - [`bin(x)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#bin)
-
-- [`chr(i)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#chr)
-
-- [`hex(x)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#hex)
 
 - [`oct(x)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#oct)
 
-- [`ord(c)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#ord)
+- [`hex(x)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#hex)
 
-- [`repr(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#repr)
+---
+
+- [`chr(i)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#chr)
+
+- [`ord(c)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#ord)
 
 ## For built-in types
 
