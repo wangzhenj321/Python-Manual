@@ -76,17 +76,23 @@
 
 - [`@classmethod`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#classmethod)
 
+- [`@staticmethod`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#staticmethod)
+
+---
+
 - [`isinstance(object, classinfo)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#isinstance)
 
 - [`issubclass(class, classinfo)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#issubclass)
 
+- [`class type(object)` or `class type(name, bases, dict)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#type)
+
+---
+
 - [`class property(fget=None, fset=None, fdel=None, doc=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#property)
 
-- [`@staticmethod`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#staticmethod)
+---
 
 - [`super([type[, object-or-type]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#super)
-
-- [`class type(object)` or `class type(name, bases, dict)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#type)
 
 ## For attribute
 
