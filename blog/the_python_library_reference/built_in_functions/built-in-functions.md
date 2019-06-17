@@ -78,6 +78,8 @@
 
 - [`@staticmethod`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#staticmethod)
 
+- [`class property(fget=None, fset=None, fdel=None, doc=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#property)
+
 ---
 
 - [`isinstance(object, classinfo)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#isinstance)
@@ -85,10 +87,6 @@
 - [`issubclass(class, classinfo)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#issubclass)
 
 - [`class type(object)` or `class type(name, bases, dict)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#type)
-
----
-
-- [`class property(fget=None, fset=None, fdel=None, doc=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#property)
 
 ---
 
@@ -148,17 +146,19 @@
 
 - [`print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#print)
 
-## For others
-
-- [`breakpoint(*args, **kws)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#breakpoint)
-
-- [`callable(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#callable)
+## For dynamic execution
 
 - [`compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#compile)
 
 - [`eval(expression, globals=None, locals=None)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#eval)
 
 - [`exec(object[, globals[, locals]])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#exec)
+
+## For others
+
+- [`breakpoint(*args, **kws)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#breakpoint)
+
+- [`callable(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#callable)
 
 - [`format(value[, format_spec])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#format)
 
