@@ -1,10 +1,10 @@
 ## Standard levels
 
-1. DEBUG :arrow_forward: `debug()`
-2. INFO :arrow_forward: `info()`
-3. WARNING :arrow_forward: `warning()`
-4. ERROR :arrow_forward: `error()`
-5. CRITICAL :arrow_forward: `critical()`
+1. DEBUG: `debug()`
+2. INFO: `info()`
+3. WARNING: `warning()`
+4. ERROR: `error()`
+5. CRITICAL: `critical()`
 
 ## Default logger
 
