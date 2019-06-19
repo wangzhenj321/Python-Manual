@@ -2,8 +2,13 @@
 
 - **Example 1**
 
-    > 1. Everything in Python is an **object**.
-    > 2. Assignment in Python same as that in Java (not including primitive types) is to pass **reference**.
+    - Although everything in Python is an object, don't think the type of this so-called object is a compound type in Java.
+    
+    - All objects in Python can be either **immutable** or **mutable**. The **immutable** type in Python is the **primitive** type in Java. The **mutable** type in Python is the **compound** type in Java. The behaviours of **immutable** and **mutable** types are same as that of **primitive** and **compound** respectively, especially being passed to functions.
+    
+        | **immutable** | **mutable** |
+        | --- | --- |
+        | <ul><li>bool</li><li>int</li><li>float</li><li>tuple</li><li>str</li><li>frozenset</li><ul> | <ul><li>list</li><li>set</li><li>dict</li><li>custom classes</li><ul> |
     
     ```python
     >>> x = ['a', 'b', 'c']
