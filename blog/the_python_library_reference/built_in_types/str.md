@@ -15,4 +15,50 @@
 - `str.upper()`
 
     Return a copy of the string with all the cased characters converted to uppercase.
+
+## `str.format(*args, **kwargs)`
+
+1. **Basic formatting**
+
+    Simple positional formatting is probably the most common use-case. Use it if the order of your arguments is not likely to change and you only have very few elements you want to concatenate.
+
+    ```python
+    >>> '{} {}'.format('one', 'two')
+    'one two'
+    >>> '{} {}'.format(1, 2)
+    '1 2'
+    >>> '{1} {0}'.format('one', 'two')
+    'two one'
+    ```
+
+2. **Value conversion**
+
+    The new-style simple formatter calls by default the `__format__()` method of an object for its representation. If you just want to render the output of `str(...)` or `repr(...)` you can use the `!s` or `!r` conversion flags.
     
+    ```python
+    >>> class Data(object):
+    ...     def __str__(self):
+    ...         return 'str'
+    ...     def __repr__(self):
+    ...         return 'repr'
+    ...
+    >>> '{0!s} {0!r}'.format(Data())
+    'str repr'
+    ```
+
+3. Padding and aligning strings
+
+    ```python
+    >>> '{:>10}'.format('test')
+    '      test'
+    >>> '{:10}'.format('test')
+    'test      '
+    >>> '{:_<10}'.format('test')
+    'test______'
+    >>> '{:^6}'.format('zip')
+    ' zip  '
+    ```
+
+## References
+
+1. [PyFormat](https://pyformat.info/)
