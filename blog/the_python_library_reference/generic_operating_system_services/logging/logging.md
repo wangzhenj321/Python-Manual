@@ -12,7 +12,25 @@
 2. The default format is the level name, logger name, and message seperated by a colon.
 3. By default, the logging module logs the messages with a severity level of WARNING or above.
 
-## 
+## Samples of `Formatter`
+
+Time of log with milliseconds:
+
+```python
+logging.Formatter('%(asctime)s.%(msecs)03d', datefmt='%Y-%m-%d,%H:%M:%S')
+```
+
+Time of log with timezone:
+
+```python
+logging.Formatter('%(asctime)s', datefmt='%Y-%m-%dT%H:%M:%S%z')
+```
+
+Log with the format of logger's name, log level, file name and line number:
+
+```python
+logging.Formatter('%(name)s %(levelname)s %(filename)s:%(lineno)d')
+```
 
 ## References
 
