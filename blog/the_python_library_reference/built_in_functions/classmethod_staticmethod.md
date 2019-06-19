@@ -39,7 +39,27 @@ A.class_foo(1)
 # executing class_foo(<class '__main__.A'>,1)
 ```
 
-One use people have found for class methods is to create inheritable alternative constructors.
+One use people have found for class methods is to create **inheritable alternative constructors**.
+
+> ```python
+> >>> class y(object):
+> ...   def __init__(self, astring):
+> ...     self.s = astring
+> ...   @classmethod
+> ...   def fromlist(cls, alist):
+> ...     x = cls('')
+> ...     x.s = ','.join(str(s) for s in alist)
+> ...     return x
+> ...   def __repr__(self):
+> ...     return 'y(%r)' % self.s
+> ...
+> >>> y1 = y('xx')
+> >>> y1
+> y('xx')
+> >>> y2 = y.fromlist(range(3))
+> >>> y2
+> y('0,1,2')
+> ```
 
 ---
 
