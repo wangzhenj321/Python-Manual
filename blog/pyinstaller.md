@@ -10,7 +10,11 @@ pip install pyinstaller
 pyinstaller --onefile <your_script_name>.py
 ```
 
-## 
+> 1. Always pass the option `--onefile`. This option tells PyInstaller to create only one file. Without this option, the libraries will be distributed as seperate files along with the executable file, and then these libraries are necessary while invoking the executable file.
+> 
+> 2. After running pyinstaller, the folder "build", the folder "dist", and the file "<your_script_name>.spec" will be created, and the executable file is under the folder "dist". 
+> 
+> 3. "PyInstaller" can only build one python script once time.
 
 ## References
 
