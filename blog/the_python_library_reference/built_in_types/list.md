@@ -1,3 +1,32 @@
+## Create an new `List` variable
+
+- **Example 1**
+
+    > 1. Everything in Python is an **object**.
+    > 2. Assignment in Python same as that in Java (not including primitive types) is to pass **reference**.
+    
+    ```python
+    >>> x = ['a', 'b', 'c']
+    >>> y = x
+    >>> y[1] = 'z'
+    >>> y
+    ['a', 'z', 'c']
+    >>> x
+    ['a', 'z', 'c']
+    ```
+
+- **Example 2**
+
+    ```python
+    >>> x = ['a', 'b', 'c']
+    >>> y = x[:]    # y = list(x)
+    >>> y[1] = 'z'
+    >>> y
+    ['a', 'z', 'c']
+    >>> x
+    ['a', 'b', 'c']
+    ```
+
 ## List Comprehensions
 
 List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.
