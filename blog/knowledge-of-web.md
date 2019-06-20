@@ -27,7 +27,7 @@ The request/status line and headers must all end with `<CR><LF>` (that is, a car
 > [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 > 
 > 1. `Content-Type: application/x-www-form-urlencoded;charset=utf-8`
-> 2. `Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA`
+> 2. `Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA`
 > 3. `Content-Type: application/json;charset=utf-8`
 > 4. `Content-Type: text/xml`
 
