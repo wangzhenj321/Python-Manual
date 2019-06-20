@@ -19,7 +19,7 @@
 <b>By instance</b>
 </td>
 <td>
-:star:<b>By class</b>:star:
+:star::star:<b>By class</b>:star::star:
 </td>
 </tr>
 <!-- 3nd row: immutable -->
