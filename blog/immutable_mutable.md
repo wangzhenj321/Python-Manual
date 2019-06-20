@@ -1,3 +1,5 @@
+# :star::star::star: **Everything in Python is an object.** :star::star::star:
+
 ## `id(object)` and Identity comparisons
 
 - [`id(object)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#id)
@@ -9,6 +11,12 @@
 - [Identity comparisons](https://docs.python.org/3/reference/expressions.html#is-not)
 
     The operators `is` and `is not` test for an object’s identity: `x is y` is true if and only if x and y are the same object. An Object’s identity is determined using the `id()` function. `x is not y` yields the inverse truth value.
+
+## Immutable and mutable types
+
+| **immutable** | **mutable** |
+| --- | --- |
+| <ul><li>bool</li><li>int</li><li>float</li><li>tuple</li><li>str</li><li>frozenset</li><ul> | <ul><li>list</li><li>set</li><li>dict</li><li>custom classes</li><ul> |
 
 ## Samples of immutable and mutable
 
@@ -31,6 +39,7 @@
 Assignment
 </td>
 <td>
+:star::star::star::star::star:
 <pre lang="python">
 >>> x = 10
 >>> y = 10
