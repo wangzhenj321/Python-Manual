@@ -55,6 +55,7 @@ True
 </pre>
 </td>
 <td rowspan="2">
+<b>Without <code>self</code></b>
 <pre lang="python">
 >>> class A():
 ...     i = 10
@@ -69,6 +70,7 @@ Traceback (most recent call last):
   File "<stdin>", line 5, in print_i
 NameError: name 'i' is not defined
 </pre>
+<b>With <code>self</code></b>
 <pre lang="python">
 >>> class A():
 ...     i = 10
