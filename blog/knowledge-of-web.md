@@ -23,7 +23,14 @@ The request/status line and headers must all end with `<CR><LF>` (that is, a car
 | Content-Length | The length of the request body in octets (8-bit bytes). | `Content-Length: 348` |
 | Content-Type | The Media type of the body of the request (used with POST and PUT requests). | `Content-Type: application/x-www-form-urlencoded` |
 | Host | The domain name of the server, and the TCP port number on which the server is listening. | `Host: en.wikipedia.org:8080` |
- 
+
+> [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
+> 
+> 1. `application/x-www-form-urlencoded`
+> 2. `multipart/form-data`
+> 3. `application/json`
+> 4. `text/xml`
+
 ### Response fields
 
 | Header field name | Description | Example |
