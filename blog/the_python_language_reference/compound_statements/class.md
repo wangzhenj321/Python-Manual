@@ -9,7 +9,7 @@
 <th colspan="2">
 <b>Outside of class</b>
 </th>
-<th colspan="2">
+<th rowspan="2">
 <b>Inside of class functions</b>
 </th>
 </tr>
@@ -20,12 +20,6 @@
 </td>
 <td>
 :star:<b>By class</b>:star:
-</td>
-<td>
-<b>Without <code>self</code></b>
-</td>
-<td>
-<b>With <code>self</code></b>
 </td>
 </tr>
 <!-- 3nd row: immutable -->
@@ -75,8 +69,6 @@ Traceback (most recent call last):
   File "<stdin>", line 5, in print_i
 NameError: name 'i' is not defined
 </pre>
-</td>
-<td rowspan="2">
 <pre lang="python">
 >>> class A():
 ...     i = 10
