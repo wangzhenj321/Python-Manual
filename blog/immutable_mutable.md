@@ -20,6 +20,8 @@
 
 ## Samples of immutable and mutable
 
+> The immutable type in Python is not same as the primitive type in Java. Please refer the case of "Assignment"-"Immutable" in the following table. The address of `x` and `y` in memory is same, but it's not possible in Java. In Java, the different memory will be allocated.
+
 <table align="center">
 <!-- 1st row: header -->
 <tr>
