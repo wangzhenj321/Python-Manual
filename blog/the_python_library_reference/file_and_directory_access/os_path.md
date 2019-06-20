@@ -2,17 +2,15 @@
 
 > All of these functions accept either only bytes or only string objects as their parameters. The result is an object of the same type, if a path or file name is returned.
 
-> The `os.path` module is always the path module suitable for the operating system Python is running on, and therefore usable for local paths. However, you can also import and use the individual modules if you want to manipulate a path that is always in one of the different formats. They all have the same interface:
-> 
-> - `posixpath` for UNIX-style paths
-> - `ntpath` for Windows paths
-> - `macpath` for old-style MacOS paths
-
 ## Attributes
 
-- **part of path**
-    - `os.path.basename(path)`
-    - `os.path.dirname(path)`
+- **parts of path**
+    - [`os.path.basename(path)`](https://docs.python.org/3/library/os.path.html#os.path.basename)
+    - [`os.path.dirname(path)`](https://docs.python.org/3/library/os.path.html#os.path.dirname)
+
+- **join or split**
+    - [`os.path.join(path, *paths)`](https://docs.python.org/3/library/os.path.html#os.path.join)
+    - [`os.path.splitext(path)`](https://docs.python.org/3/library/os.path.html#os.path.splitext)
 
 - **normalize path**
     - [`os.path.abspath(path)`](https://docs.python.org/3/library/os.path.html#os.path.abspath)
@@ -47,7 +45,3 @@
     - [`os.path.isdir(path)`](https://docs.python.org/3/library/os.path.html#os.path.isdir)
     - [`os.path.islink(path)`](https://docs.python.org/3/library/os.path.html#os.path.islink)
     - [`os.path.ismount(path)`](https://docs.python.org/3/library/os.path.html#os.path.ismount)
-
-- **join or split**
-    - [`os.path.join(path, *paths)`](https://docs.python.org/3/library/os.path.html#os.path.join)
-    - [`os.path.splitext(path)`](https://docs.python.org/3/library/os.path.html#os.path.splitext)
