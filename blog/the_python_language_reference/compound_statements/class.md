@@ -55,7 +55,7 @@ True
 </pre>
 </td>
 <td rowspan="2">
-<b>Without <code>self</code></b>
+:star::star:<b>Without <code>self</code></b>:star::star:
 <pre lang="python">
 >>> class A():
 ...     i = 10
