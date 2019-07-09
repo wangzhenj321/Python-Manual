@@ -27,6 +27,29 @@ After you install Anaconda or Miniconda, if you prefer a desktop graphical user 
 
 # conda
 
+## Conda directory structure
+
+- `ROOT_DIR`
+
+    The directory that Anaconda or Miniconda was installed into.
+
+- `/pkgs`
+
+    Also referred to as `PKGS_DIR`. **This directory contains decompressed packages, ready to be linked in conda environments.** Each package resides in a subdirectory corresponding to its canonical name.
+
+- `/envs`
+
+    The system location for additional conda environments to be created.
+
+---
+
+The following subdirectories comprise the default Anaconda environment. Other conda environments usually contain the same subdirectories as the default environment.
+
+- `/bin`
+- `/include`
+- `/lib`
+- `/share`
+
 ## Error of `conda activate` on Windows
 
 The usage of `conda activate python36` on Windows results in the following error:
