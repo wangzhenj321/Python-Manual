@@ -36,6 +36,18 @@ After you install Anaconda or Miniconda, if you prefer a desktop graphical user 
 - `/pkgs`
 
     Also referred to as `PKGS_DIR`. **This directory contains decompressed packages, ready to be linked in conda environments.** Each package resides in a subdirectory corresponding to its canonical name.
+    
+    Example: `matplotlib`
+    
+    - the `matplotlib` package in `/pkgs`
+        - `pkgs/matplotlib-3.1.0-py37h54f8f79_0.tar.bz2`
+        - `pkgs/matplotlib-3.1.0-py37h54f8f79_0`
+    
+    - the decompressed `matplotlib` package in `/pkgs`
+        - `pkgs/matplotlib-3.1.0-py37h54f8f79_0/lib/python3.7/site-packages/matplotlib`
+    
+    - the linked `matplotlib` package in conda environments
+        - `envs/dummy/lib/python3.7/site-packages/matplotlib`
 
 - `/envs`
 
