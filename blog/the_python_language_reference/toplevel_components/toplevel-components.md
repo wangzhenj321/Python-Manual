@@ -14,3 +14,7 @@ This syntax is used in the following situations:
 ## Interactive input
 
 The interpreter may also be invoked in interactive mode; in this case, it does not read and execute a complete program but reads and executes one statement (possibly compound) at a time. **The initial environment is identical to that of a complete program; each statement is executed in the namespace of `__main__`.**
+
+## Expression input
+
+`eval()` is used for expression input. It ignores leading whitespace.
