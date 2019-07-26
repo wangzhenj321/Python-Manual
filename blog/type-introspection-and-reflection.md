@@ -92,7 +92,7 @@ if __name__ == "__main__":
     print info.__doc__
 ```
 
-```python
+```
 >>> from apihelper import info
 >>> li = []
 >>> info(li)
