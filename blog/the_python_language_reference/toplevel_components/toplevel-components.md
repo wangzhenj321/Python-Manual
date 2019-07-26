@@ -1,9 +1,10 @@
 ## File input
 
 This syntax is used in the following situations:
-    - when parsing a **complete Python program** (from a file or from a string);
-    - when parsing a module;
-    - when parsing a string passed to the `exec()` function;
+
+- when parsing a **complete Python program** (from a file or from a string);
+- when parsing a module;
+- when parsing a string passed to the `exec()` function;
 
 > **Complete Python programs**
 > 
