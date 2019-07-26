@@ -1,8 +1,15 @@
 ## Complete Python programs
 
-A complete Python program is executed in a minimally initialized environment: all built-in and standard modules are available, but none have been initialized, except for `sys` (various system services), `builtins` (built-in functions, exceptions and `None`) and `__main__`. The latter is used to provide the local and global namespace for execution of the complete program.
+A **complete Python program** is executed in a minimally initialized environment: all built-in and standard modules are available, but none have been initialized, except for `sys` (various system services), `builtins` (built-in functions, exceptions and `None`) and `__main__`. The latter is used to provide the local and global namespace for execution of the complete program.
 
 A complete program can be passed to the interpreter in **three forms**: with the `-c` string command line option, as a file passed as the first command line argument, or as standard input. If the file or standard input is a tty device, the interpreter enters interactive mode; otherwise, it executes the file as a complete program.
+
+## File input
+
+This syntax is used in the following situations:
+  - when parsing a **complete Python program** (from a file or from a string);
+  - when parsing a module;
+  - when parsing a string passed to the `exec()` function;
 
 ## Interactive input
 
