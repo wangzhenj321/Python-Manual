@@ -89,17 +89,38 @@ Because Conda introduces a new packaging format, you cannot use pip and Conda in
 
 ## Basic commands
 
+### List of basic commands
+
+| Commands | Description |
+| --- | --- |
+| `install` | Install packages |
+| `uninstall` | Uninstall packages |
+| `freeze` | Output installed packages in requirements format |
+| `list` | List installed packages |
+| `show` | Show information about installed packages |
+| `search` | Search PyPI for packages |
+
+### Common usage of basic commands
+
 - `install`
     - `pip install SomePackage            # latest version`
     - `pip install SomePackage==1.0.4     # specific version`
     - `pip install 'SomePackage>=1.0.4'   # minimum version`
     - `pip install --upgrade SomePackage`
+    - `pip install -r <requirements file>`
+
 - `uninstall`
     - `pip uninstall simplejson`
+
+- `freeze`
+    - `pip freeze > requirements.txt`
+
 - `list`
-    - `pip list`
+    - `pip list -v`
     - `pip list --outdated`
+
 - `show`
     - `pip show sphinx`
+
 - `search`
     - `pip search peppercorn`
