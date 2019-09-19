@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
 For a package, the same effect can be achieved by including a `__main__.py` module, the contents of which will be executed when the module is run with `-m`.
 
-> Also refer to [Top-level components](../../the_python_language_reference/toplevel_components/toplevel_components.md)
+> Also refer to [Top-level components](../../the_python_language_reference/toplevel_components/toplevel-components.md)
 
 ## [What is a top-level statement in Python?](https://stackoverflow.com/questions/18138166/what-is-a-top-level-statement-in-python)
 
