@@ -1,5 +1,7 @@
 **This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.**
 
+---
+
 - [`sys.argv`](https://docs.python.org/3/library/sys.html#sys.argv)
 
 - [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path)
