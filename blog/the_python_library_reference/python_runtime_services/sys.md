@@ -34,3 +34,5 @@
         /home/wang/miniconda3/lib/python3.7/lib-dynload
         /home/wang/miniconda3/lib/python3.7/site-packages
         ```
+
+- [`sys.platform`](https://docs.python.org/3/library/sys.html#sys.platform)
