@@ -8,6 +8,8 @@
 6. mutable
 7. nest lists
 
+## Operations
+
 ## Create an new `List` variable
 
     ```python
