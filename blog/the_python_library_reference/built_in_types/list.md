@@ -1,3 +1,13 @@
+## [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists)
+
+1. square bracket
+2. contain items of different types
+3. index and slice: can be assigned
+4. slice: return a new list
+5. concatenation
+6. mutable
+7. nest lists
+
 ## Create an new `List` variable
 
     ```python
