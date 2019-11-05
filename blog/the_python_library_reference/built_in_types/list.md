@@ -1,7 +1,7 @@
 ## Lists
 
-1. square bracket
-2. contain items of different types
+1. square brackets
+2. might contain items of different types
 3. index and slice: can be assigned
 4. slice: return a new list
 5. concatenation
@@ -10,17 +10,12 @@
 
 ## Operations
 
-## Create an new `List` variable
-
-    ```python
-    >>> x = ['a', 'b', 'c']
-    >>> y = x[:]    # y = list(x)
-    >>> y[1] = 'z'
-    >>> y
-    ['a', 'z', 'c']
-    >>> x
-    ['a', 'b', 'c']
-    ```
+1. `append(x)` :vs: `extend(iterable)` :vs: `insert(i, x)`
+2. `remove(x)` :vs: `pop([i])` :vs: `clear()`
+3. `index(x[, start[, end]])`
+4. `count(x)`
+5. `sort(key=None, reverse=False)` :vs: `reverse()`
+6. `copy()`
 
 ## List Comprehensions
 
