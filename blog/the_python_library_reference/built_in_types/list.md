@@ -7,6 +7,8 @@
 5. concatenation
 6. mutable
 7. nest lists
+8. Using Lists as Stacks
+9. Using Lists as Queues: `collections.deque`
 
 ## Operations
 
