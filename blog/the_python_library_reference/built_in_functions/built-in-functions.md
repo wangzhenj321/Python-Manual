@@ -114,17 +114,13 @@
 
 ## For iterable
 
-- [`all(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#all)
-
-- [`any(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#any)
+- [`all(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#all) :vs: [`any(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#any)
 
 - [`enumerate(iterable, start=0)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#enumerate) :vs: [`map(function, iterable, ...)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#map) :vs: [`zip(*iterables)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#zip)
 
 - [`filter(function, iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#filter)
 
-- [`iter(object[, sentinel])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#iter)
-
-- [`next(iterator[, default])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#next)
+- [`iter(object[, sentinel])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#iter) :vs: [`next(iterator[, default])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#next)
 
 - [`range(stop)` or `range(start, stop[, step])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#func-range)
 
