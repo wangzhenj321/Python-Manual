@@ -1,4 +1,4 @@
-## [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists)
+## Lists
 
 1. square bracket
 2. contain items of different types
@@ -87,3 +87,7 @@ The following list comprehension will transpose rows and columns:
 ```
 
 > Be careful of the order of evaluating the inner and outer `for`s.
+
+## References
+
+1. [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists)
