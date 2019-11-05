@@ -118,13 +118,11 @@
 
 - [`any(iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#any)
 
-- [`enumerate(iterable, start=0)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#enumerate)
+- [`enumerate(iterable, start=0)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#enumerate) :vs: [`map(function, iterable, ...)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#map) :vs: [`zip(*iterables)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#zip)
 
 - [`filter(function, iterable)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#filter)
 
 - [`iter(object[, sentinel])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#iter)
-
-- [`map(function, iterable, ...)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#map)
 
 - [`next(iterator[, default])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#next)
 
@@ -135,8 +133,6 @@
 - [`sorted(iterable, *, key=None, reverse=False)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#sorted)
 
 - [`sum(iterable[, start])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#sum)
-
-- [`zip(*iterables)`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#zip)
 
 ## For io
 
