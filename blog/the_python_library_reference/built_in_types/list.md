@@ -88,3 +88,4 @@ The following list comprehension will transpose rows and columns:
 ## References
 
 1. [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists)
+2. [More on Lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
