@@ -1,3 +1,5 @@
+# `List`
+
 ## Lists
 
 1. square brackets
@@ -89,3 +91,30 @@ The following list comprehension will transpose rows and columns:
 
 1. [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists)
 2. [More on Lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
+
+# `tuple`
+
+## Tuples and Sequences
+
+1. immutable
+2. usually contain a heterogeneous sequence of elements
+3. the construction of tuples containing 0 or 1 items
+
+```python
+>>> empty = ()
+>>> singleton = 'hello',    # <-- note trailing comma
+>>> len(empty)
+0
+>>> len(singleton)
+1
+>>> singleton
+('hello',)
+>>> t = 12345, 54321, 'hello!'
+>>> t
+(12345, 54321, 'hello!')
+```
+
+## References
+
+1. [Tuples and Sequences](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
+
