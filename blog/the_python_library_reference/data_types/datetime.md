@@ -1,3 +1,18 @@
+**Table of contents**
+
+- [Available Types](#available-types)
+- [`timedelta` Objects](#timedelta-objects)
+- [`date` Objects](#date-objects)
+- [`datetime` Objects](#datetime-objects)
+- [`time` Objects](#time-objects)
+- [`tzinfo` Objects](#tzinfo-objects)
+- [`timezone` Objects](#timezone-objects)
+- [`strftime()` and `strptime()` Behavior](#strftime-and-strptime-behavior)
+- [Examples](#examples)
+- [References](#references)
+
+---
+
 There are two kinds of date and time objects: "naive" and "aware".
 
 The `datetime` module exports the following constants:
