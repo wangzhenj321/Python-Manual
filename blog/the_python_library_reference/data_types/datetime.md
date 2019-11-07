@@ -191,7 +191,7 @@ Class attributes:
 
 Instance methods:
 
-- `timezone.utcoffset(dt)`
+- `timezone.utcoffset(dt)`: return a `timedelta` instance
 - `timezone.tzname(dt)`
 - `timezone.dst(dt)`
 - `timezone.fromutc(dt)`
@@ -199,6 +199,14 @@ Instance methods:
 ## `strftime()` and `strptime()` Behavior
 
 ## Examples
+
+1. get local timezone
+
+    ```python
+    >>> tz_local = timezone(datetime.now().astimezone().utcoffset())
+    >>> tz_local
+    datetime.timezone(datetime.timedelta(seconds=32400))
+    ```
 
 ## References
 
