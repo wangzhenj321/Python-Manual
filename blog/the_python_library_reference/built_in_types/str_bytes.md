@@ -1,22 +1,32 @@
+# Text Sequence Type — `str`
+
+## Strings
+
+1. single quotes or double quotes
+2. raw strings `r`
+3. triple-quotes
+4. concatenate
+5. a character is simply a string of size one
+6. immutable
+
+## `str`
+
+```python
+class str(object='')
+class str(object=b'', encoding='utf-8', errors='strict')
+```
+
 ## String Methods
 
-- `str.encode(encoding="utf-8", errors="strict")`
+1. `count(sub[, start[, end]])`
+2. `encode(encoding="utf-8", errors="strict")`
+3. `format(*args, **kwargs)`
+4. `join(iterable)`
+5. `split(sep=None, maxsplit=-1)`
+6. `strip([chars])`
+7. `upper()`
 
-    Return an encoded version of the string as a bytes object.
-
-- `str.format(*args, **kwargs)`
-
-    Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces `{}`.
-
-- `str.strip([chars])`
-
-    Return a copy of the string with the leading and trailing characters removed. The chars argument is a string specifying the set of characters to be removed. If omitted or `None`, the chars argument defaults to removing whitespace. The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped.
-
-- `str.upper()`
-
-    Return a copy of the string with all the cased characters converted to uppercase.
-
-## `str.format(*args, **kwargs)`
+### `str.format(*args, **kwargs)`
 
 1. **Basic formatting**
 
@@ -59,6 +69,26 @@
     ' zip  '
     ```
 
+## printf-style String Formatting
+
 ## References
 
-1. [PyFormat](https://pyformat.info/)
+1. [Strings](https://docs.python.org/3.7/tutorial/introduction.html#strings)
+2. [PyFormat](https://pyformat.info/)
+3. [Text Sequence Type](https://docs.python.org/3.7/library/stdtypes.html#text-sequence-type-str)
+
+# Binary Sequence Types — `bytes`, `bytearray`, `memoryview`
+
+## Bytes Objects
+
+## Bytearray Objects
+
+## Bytes and Bytearray Operations
+
+## printf-style Bytes Formatting
+
+## Memory Views
+
+## References
+
+1. [Binary Sequence Types](https://docs.python.org/3.7/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview)
