@@ -41,3 +41,59 @@ ax[1].plot(x, np.cos(x));
 ```
 
 For more simple plots, the choice of which style to use is largely a matter of preference, but the object-oriented approach can become a necessity as plots become more complicated. 
+
+## `show()` or No `show()`? How to Display Your Plots
+
+A visualization you can't see won't be of much use, but just how you view your Matplotlib plots depends on the context. The best use of Matplotlib differs depending on how you are using it; roughly, the three applicable contexts are using Matplotlib **in a script**, **in an IPython terminal**, or **in an IPython notebook**.
+
+### Plotting from a script
+
+If you are using Matplotlib from within a script, the function `plt.show()` is your friend. `plt.show()` starts an event loop, looks for all currently active figure objects, and opens one or more interactive windows that display your figure or figures.
+
+So, for example, you may have a file called `myplot.py` containing the following:
+
+```python
+# ------- file: myplot.py ------
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, np.sin(x))
+plt.plot(x, np.cos(x))
+
+plt.show()
+```
+
+You can then run this script from the command-line prompt, which will result in a window opening with your figure displayed:
+
+```
+$ python myplot.py
+```
+
+The `plt.show()` command does a lot under the hood, as it must interact with your system's interactive graphical backend. The details of this operation can vary greatly from system to system and even installation to installation, but matplotlib does its best to hide all these details from you.
+
+One thing to be aware of: the `plt.show()` command should be used only once per Python session, and is most often seen at the very end of the script. Multiple `show()` commands can lead to unpredictable backend-dependent behavior, and should mostly be avoided.
+
+### Plotting from an IPython shell
+
+It can be very convenient to use Matplotlib interactively within an IPython shell. IPython is built to work well with Matplotlib if you specify Matplotlib mode. To enable this mode, you can use the `%matplotlib` magic command after starting ipython:
+
+```python
+In [1]: %matplotlib
+Using matplotlib backend: TkAgg
+
+In [2]: import matplotlib.pyplot as plt
+```
+
+At this point, any `plt` plot command will cause a figure window to open, and further commands can be run to update the plot. Some changes (such as modifying properties of lines that are already drawn) will not draw automatically: to force an update, use `plt.draw()`. Using `plt.show()` in Matplotlib mode is not required.
+
+### Plotting from an IPython notebook
+
+The IPython notebook is a browser-based interactive data analysis tool that can combine narrative, code, graphics, HTML elements, and much more into a single executable document.
+
+Plotting interactively within an IPython notebook can be done with the `%matplotlib` command, and works in a similar way to the IPython shell. In the IPython notebook, you also have the option of embedding graphics directly in the notebook, with two possible options:
+
+1. `%matplotlib notebook` will lead to **interactive** plots embedded within the notebook.
+
+2. `%matplotlib inline` will lead to **static** images of your plot embedded in the notebook.
