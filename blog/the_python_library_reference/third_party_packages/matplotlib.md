@@ -1,3 +1,7 @@
+## Basic structure
+
+In Matplotlib, the figure (an instance of the class `plt.Figure`) can be thought of as a single container that contains all the objects representing axes, graphics, text, and labels. The axes (an instance of the class `plt.Axes`) is a bounding box with ticks and labels, which will eventually contain the plot elements that make up our visualization.
+
 ## Two Interfaces for the Price of One
 
 A potentially confusing feature of Matplotlib is its dual interfaces: **a convenient MATLAB-style state-based interface**, and **a more powerful object-oriented interface**.
