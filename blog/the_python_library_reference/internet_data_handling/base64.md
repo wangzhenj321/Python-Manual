@@ -38,7 +38,15 @@ The term **Base64** is taken from the **Multipurpose Internet Mail Extensions (M
     
     <img src="../../../img/the_python_library_reference/internet_data_handling/base64_padding2.png">
 
+## `base64`
+
+The modern interface provides:
+
+- `base64.b64encode(s, altchars=None)` :vs: `base64.b64decode(s, altchars=None, validate=False)`
+- `base64.urlsafe_b64encode(s)` :vs: `base64.urlsafe_b64decode(s)`
+
 ## References
 
 1. [Base64 Encoding and Decoding Using Python](https://code.tutsplus.com/tutorials/base64-encoding-and-decoding-using-python--cms-25588)
 2. [Base64](https://en.wikipedia.org/wiki/Base64)
+3. [base64 — Base16, Base32, Base64, Base85 Data Encodings](https://docs.python.org/3.7/library/base64.html)
