@@ -4,11 +4,9 @@
 
 ## Attributes
 
-- **parts of path**
+- **join/split path**
     - `os.path.basename(path)` :star:
     - `os.path.dirname(path)` :star:
-
-- **join or split**
     - `os.path.join(path, *paths)` :star:
     - `os.path.splitext(path)` :star:
 
@@ -19,11 +17,11 @@
     - `os.path.realpath(path)`
     - `os.path.normcase(path)`
 
-- **expand environment variable**
+- **expand path**
     - `os.path.expanduser(path)`
     - `os.path.expandvars(path)`
 
-- **compare two or more**
+- **compare paths**
     - `os.path.commonpath(paths)`
     - `os.path.commonprefix(list)`
     - `os.path.samefile(path1, path2)`
