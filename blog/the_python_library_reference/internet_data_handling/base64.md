@@ -1,3 +1,10 @@
+**Table of contents**
+
+- [Why Do We Need Base64?](#why-do-we-need-base64)
+- [What Is Base64?](#what-is-base64)
+- [`base64`](#base64)
+- [References](#references)
+
 ## Why Do We Need Base64?
 
 Say you have a binary image file you wanted to transfer across a network. You’re amazed that the file wasn’t received properly on the other side—the file just contained strange characters! Well, it seems that you attempted to send your file in its raw bits and bytes format, while the media used was designed for streaming text.What would be the workaround to avoid such an issue? The answer is **Base64 encoding**.
