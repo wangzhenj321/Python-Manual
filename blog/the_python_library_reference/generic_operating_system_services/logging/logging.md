@@ -1,16 +1,18 @@
 ## Standard levels
 
-1. DEBUG: `debug()`
-2. INFO: `info()`
-3. WARNING: `warning()`
-4. ERROR: `error()`
-5. CRITICAL: `critical()`
+1. **DEBUG:** `debug()`
+2. **INFO:** `info()`
+3. **WARNING:** `warning()`
+4. **ERROR:** `error()`
+5. **CRITICAL:** `critical()`
+
+> The default level is **WARNING**, which means that only events of this level and above will be tracked, unless the logging package is configured to do otherwise.
 
 ## Default logger
 
 1. The default logger is `root`.
 2. The default format is the level name, logger name, and message seperated by a colon.
-3. By default, the logging module logs the messages with a severity level of WARNING or above.
+3. By default, the logging module logs the messages with a severity level of **WARNING** or above.
 
 ## Samples of `Formatter`
 
@@ -30,6 +32,40 @@ Log with the format of logger's name, log level, file name and line number:
 
 ```python
 logging.Formatter('%(name)s %(levelname)s %(filename)s:%(lineno)d')
+```
+
+## Multiple handlers and formatters
+
+```python
+import logging
+
+# create logger with 'simple_example'
+logger = logging.getLogger('simple_example')
+logger.setLevel(logging.DEBUG)
+
+# create file handler which logs even debug messages
+fh = logging.FileHandler('spam.log')
+fh.setLevel(logging.DEBUG)
+
+# create console handler with a higher log level
+ch = logging.StreamHandler()
+ch.setLevel(logging.ERROR)
+
+# create formatter and add it to the handlers
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+fh.setFormatter(formatter)
+
+# add the handlers to logger
+logger.addHandler(ch)
+logger.addHandler(fh)
+
+# 'application' code
+logger.debug('debug message')
+logger.info('info message')
+logger.warning('warn message')
+logger.error('error message')
+logger.critical('critical message')
 ```
 
 ## References
