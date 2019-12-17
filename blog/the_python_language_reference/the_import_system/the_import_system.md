@@ -1,3 +1,6 @@
+https://python3-cookbook.readthedocs.io/zh_CN/latest/c10/p05_separate_directories_import_by_namespace.html
+https://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p10_modules_and_packages.html
+
 > **module**
 > 
 > An object that serves as an organizational unit of Python code. Modules have a namespace containing arbitrary Python objects. Modules are loaded into Python by the process of importing.
