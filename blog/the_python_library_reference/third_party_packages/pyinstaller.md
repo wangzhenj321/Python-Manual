@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/9946760/add-image-to-spec-file-in-pyinstaller
+
 ## Installation
 
 ```
