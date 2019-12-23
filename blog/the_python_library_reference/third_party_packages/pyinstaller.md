@@ -1,5 +1,3 @@
-https://stackoverflow.com/questions/9946760/add-image-to-spec-file-in-pyinstaller
-
 ## Installation
 
 ```
@@ -17,6 +15,14 @@ pyinstaller --onefile <your_script_name>.py
 > 2. After running pyinstaller, the folder "build", the folder "dist", and the file "<your_script_name>.spec" will be created, and the executable file is under the folder "dist". 
 > 
 > 3. "PyInstaller" can only build one python script once time.
+
+## Q & A
+
+1. https://stackoverflow.com/questions/9946760/add-image-to-spec-file-in-pyinstaller
+2. https://stackoverflow.com/questions/44681356/reduce-pyinstaller-executable-size
+3. https://stackoverflow.com/questions/48629486/how-can-i-create-the-minimum-size-executable-with-pyinstaller
+4. https://stackoverflow.com/questions/43886822/pyinstaller-with-pandas-creates-over-500-mb-exe
+5. https://stackoverflow.com/questions/47692213/reducing-size-of-pyinstaller-exe
 
 ## References
 
