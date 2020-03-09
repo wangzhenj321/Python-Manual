@@ -16,6 +16,8 @@ Objects such as modules and instances have an updateable `__dict__` attribute; h
 
 Without an argument, `vars()` acts like `locals()`. Note, the locals dictionary is only useful for reads since updates to the locals dictionary are ignored.
 
+> `object.__dict__`: A dictionary or other mapping object used to store an object’s (writable) attributes.
+
 ## [`dir([object])`](https://docs.python.org/3/library/functions.html?highlight=staticmethod#dir)
 
 Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object.
