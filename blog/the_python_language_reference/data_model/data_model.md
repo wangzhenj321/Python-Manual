@@ -11,17 +11,29 @@ A class can implement certain operations that are invoked by special syntax (suc
 - `object.__new__(cls[, ...])`
 - `object.__init__(self[, ...])`
 - `object.__del__(self)`
+
+---
+
 - `object.__repr__(self)`
 - `object.__str__(self)`
 - `object.__bytes__(self)`
 - `object.__format__(self, format_spec)`
+
+---
+
 - `object.__lt__(self, other)`
 - `object.__le__(self, other)`
 - `object.__eq__(self, other)`
 - `object.__ne__(self, other)`
 - `object.__gt__(self, other)`
 - `object.__ge__(self, other)`
+
+---
+
 - `object.__hash__(self)`
+
+---
+
 - `object.__bool__(self)`
 
 ## Customizing attribute access
