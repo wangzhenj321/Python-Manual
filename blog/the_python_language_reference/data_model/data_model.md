@@ -53,3 +53,7 @@ The following methods can be defined to customize the meaning of attribute acces
 ### Invoking Descriptors
 
 ### __slots__
+
+## Special method lookup
+
+Refer to []()
