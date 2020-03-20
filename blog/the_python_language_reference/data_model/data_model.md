@@ -105,8 +105,10 @@ For a more fine grained customization of the module behavior (setting attributes
 
 ### Invoking Descriptors
 
-### __slots__
+### `__slots__`
+
+## Customizing class creation
 
 ## Special method lookup
 
-Refer to []()
+Refer to [Special method lookup](special_method_lookup.md)
