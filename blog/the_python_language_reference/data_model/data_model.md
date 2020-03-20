@@ -41,7 +41,7 @@ A class can implement certain operations that are invoked by special syntax (suc
 The following methods can be defined to customize the meaning of attribute access (use of, assignment to, or deletion of `x.name`) for class instances.
 
 - `object.__getattr__(self, name)`
-- `object.__getattribute__(self, name)`
+- `object.__getattribute__(self, name)` (Refer to [Special method lookup](special_method_lookup.md))
 - `object.__setattr__(self, name, value)`
 - `object.__delattr__(self, name)`
 - `object.__dir__(self)`
