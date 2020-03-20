@@ -2,6 +2,50 @@
 
 # The standard type hierarchy
 
+- None
+- NotImplemented
+- Ellipsis
+- numbers.Number
+    - numbers.Integral
+        - Integers (int)
+        - Booleans (bool)
+    - numbers.Real (float)
+    - numbers.Complex (complex)
+- Sequences
+    - Immutable sequences
+        - Strings
+        - Tuples
+        - Bytes
+    - Mutable sequences
+        - Lists
+        - Byte Arrays
+- Set types
+    - Sets
+    - Frozen sets
+- Mappings
+    - Dictionaries
+- Callable types
+    - User-defined functions
+    - Instance methods
+    - Generator functions
+    - Coroutine functions
+    - Asynchronous generator functions
+    - Built-in functions
+    - Built-in methods
+    - Classes
+    - Class Instances
+- Modules
+- Custom classes
+- Class instances
+- I/O objects (also known as file objects)
+- Internal types
+    - Code objects
+    - Frame objects
+    - Traceback objects
+    - Slice objects
+    - Static method objects
+    - Class method objects
+
 # Special method names
 
 A class can implement certain operations that are invoked by special syntax (such as arithmetic operations or subscripting and slicing) by defining methods with special names. This is Python's approach to *operator overloading*, allowing classes to define their own behavior with respect to language operators.
