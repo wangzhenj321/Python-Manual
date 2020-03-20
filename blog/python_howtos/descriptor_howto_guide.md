@@ -187,7 +187,7 @@ Python's object oriented features are built upon a function based environment. U
 
 In a class definition, methods are written using `def` or `lambda`, the usual tools for creating functions. Methods only differ from regular functions in that the first argument is reserved for the object instance. **By Python convention, the instance reference is called `self` but may be called this or any other variable name.**
 
-To support method calls, functions include the `__get__()` method for binding methods during attribute access. This means that all functions are non-data descriptors which return bound methods when they are invoked from an object. In pure Python, it works like this:
+To support method calls, functions include the `__get__()` method for binding methods during attribute access. This means that all functions are non-data descriptors which return **bound methods** when they are invoked from an object. In pure Python, it works like this:
 
 ```python
 class Function(object):
