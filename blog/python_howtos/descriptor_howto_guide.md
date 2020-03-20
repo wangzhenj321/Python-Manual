@@ -340,3 +340,7 @@ class ClassMethod(object):
             return self.f(klass, *args)
         return newfunc
 ```
+
+## References
+
+1. [Descriptor HowTo Guide](https://docs.python.org/3.7/howto/descriptor.html)
