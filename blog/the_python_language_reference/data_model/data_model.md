@@ -48,7 +48,16 @@ The following methods can be defined to customize the meaning of attribute acces
 
 ### Customizing module attribute access
 
+Special names `__getattr__` and `__dir__` can be also used to customize access to module attributes.
+
+For a more fine grained customization of the module behavior (setting attributes, properties, etc.), one can set the `__class__` attribute of a module object to a subclass of `types.ModuleType`.
+
 ### Implementing Descriptors
+
+- `object.__get__(self, instance, owner)`
+- `object.__set__(self, instance, value)`
+- `object.__delete__(self, instance)`
+- `object.__set_name__(self, owner, name)`
 
 ### Invoking Descriptors
 
