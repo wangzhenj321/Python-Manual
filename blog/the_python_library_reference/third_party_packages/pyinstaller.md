@@ -60,8 +60,6 @@ Normally you name one script on the command line. If you name more, all are anal
 >           console=True )
 > ```
 > 
-> ---
-> 
 > **`spec` file created with `--onedir` option:**
 > 
 > ```
