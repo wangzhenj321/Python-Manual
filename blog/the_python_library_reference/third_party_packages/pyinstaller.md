@@ -1,4 +1,10 @@
-# Using PyInstaller
+## Installation
+
+```
+pip install pyinstaller
+```
+
+## Using PyInstaller
 
 The syntax of the `pyinstaller` command is:
 
@@ -102,23 +108,37 @@ Normally you name one script on the command line. If you name more, all are anal
 >                name='main')
 > ```
 
-## Installation
+### Options
+
+- `--clean`
+    Clean PyInstaller cache and remove temporary files before building.
+
+- `-D, --onedir`
+    Create a one-folder bundle containing an executable (default)
+
+- `-F, --onefile`
+    Create a one-file bundled executable.
+
+- `-n NAME, --name NAME`
+    Name to assign to the bundled app and spec file (default: first script’s basename)
+
+## Using Spec Files
+
+There are four cases where it is useful to modify the spec file:
+
+- When you want to bundle data files with the app.
+- When you want to include run-time libraries (`.dll` or `.so` files) that PyInstaller does not know about from any other source.
+- When you want to add Python run-time options to the executable.
+- When you want to create a multiprogram bundle with merged common modules.
+
+### Adding Data Files
 
 ```
-pip install pyinstaller
+a = Analysis(...
+     datas= [ ('/mygame/sfx/*.mp3', 'sfx' ) ],
+     ...
+     )
 ```
-
-## Create Executable
-
-```
-pyinstaller --onefile <your_script_name>.py
-```
-
-> 1. The `--onefile` option tells PyInstaller to create only one file. Without this option, the libraries will be distributed as seperate files along with the executable file, and then these libraries are necessary while invoking the executable file.
-> 
-> 2. After running pyinstaller, the folder "build", the folder "dist", and the file "<your_script_name>.spec" will be created, and the executable file is under the folder "dist". 
-> 
-> 3. "PyInstaller" can only build one python script once time.
 
 ## Q & A
 
