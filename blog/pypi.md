@@ -166,7 +166,7 @@ packagedummy
 
    - Own projects on Pypi:
    
-       <>
+       <img src="../img/projects_on_pypi.png">
    
    - Install own project with `pip`:
    
