@@ -174,7 +174,15 @@ packagedummy
        pip install packagedummy
        ```
 
+## Q & A: Differences between distribute, distutils, setuptools and distutils2
+
+**Recommendation:**
+
+If all of this is new to you, and you don't know where to start, I would recommend learning `setuptools`, along with `pip` and `virtualenv`, which all work very well together.
+
 ## References
 
 1. [Python application 的打包和发布——(上)](http://wsfdl.com/python/2015/09/06/Python%E5%BA%94%E7%94%A8%E7%9A%84%E6%89%93%E5%8C%85%E5%92%8C%E5%8F%91%E5%B8%83%E4%B8%8A.html)
-2. [A sample Python project](https://github.com/pypa/sampleproject)
+2. [Python application 的打包和发布——(下)](http://wsfdl.com/python/2015/09/08/Python%E5%BA%94%E7%94%A8%E7%9A%84%E6%89%93%E5%8C%85%E5%92%8C%E5%8F%91%E5%B8%83%E4%B8%8B.html)
+3. [A sample Python project](https://github.com/pypa/sampleproject)
+4. [Differences between distribute, distutils, setuptools and distutils2?](https://stackoverflow.com/questions/6344076/differences-between-distribute-distutils-setuptools-and-distutils2)
