@@ -1,6 +1,4 @@
-## `yield`
-
-https://docs.python.org/3.7/reference/simple_stmts.html#the-yield-statement
+## [`yield`](./yield.md)
 
 ## `global`
 
