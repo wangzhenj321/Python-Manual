@@ -176,4 +176,5 @@ packagedummy
 
 ## References
 
-1. [A sample Python project](https://github.com/pypa/sampleproject)
+1. [Python application 的打包和发布——(上)](http://wsfdl.com/python/2015/09/06/Python%E5%BA%94%E7%94%A8%E7%9A%84%E6%89%93%E5%8C%85%E5%92%8C%E5%8F%91%E5%B8%83%E4%B8%8A.html)
+2. [A sample Python project](https://github.com/pypa/sampleproject)
