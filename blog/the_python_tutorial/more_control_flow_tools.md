@@ -68,7 +68,49 @@ The reverse situation occurs when the arguments are already in a list or tuple b
 
 ### Lambda Expressions
 
+```python
+>>> def make_incrementor(n):
+...     return lambda x: x + n
+...
+>>> f = make_incrementor(42)
+>>> f(0)
+42
+>>> f(1)
+43
+```
+
 ### Documentation Strings
 
+The first line should always be a short, concise summary of the object’s purpose. This line should begin with a capital letter and end with a period.
 
+If there are more lines in the documentation string, the second line should be blank, visually separating the summary from the rest of the description.
 
+Here is an example of a multi-line docstring:
+
+```python
+>>> def my_function():
+...     """Do nothing, but document it.
+...
+...     No, really, it doesn't do anything.
+...     """
+...     pass
+...
+>>> print(my_function.__doc__)
+Do nothing, but document it.
+
+    No, really, it doesn't do anything.
+```
+
+### Function Annotations
+
+```python
+>>> def f(ham: str, eggs: str = 'eggs') -> str:
+...     print("Annotations:", f.__annotations__)
+...     print("Arguments:", ham, eggs)
+...     return ham + ' and ' + eggs
+...
+>>> f('spam')
+Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
+Arguments: spam eggs
+'spam and eggs'
+```
