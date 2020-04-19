@@ -85,6 +85,43 @@ So Conda is a packaging tool and installer that aims to do more than what pip do
 
 Because Conda introduces a new packaging format, you cannot use pip and Conda interchangeably; pip cannot install the Conda package format. **You can use the two tools side by side (by installing pip with conda install pip) but they do not interoperate either.**
 
+## Create venv with `conda` and `virtualenv`
+
+```
+$ conda create -n dummy python==3.7.3
+$ conda list
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+ca-certificates           2020.1.1                      0  
+certifi                   2020.4.5.1               py37_0  
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+ncurses                   6.2                  he6710b0_0  
+openssl                   1.1.1f               h7b6447c_0  
+pip                       20.0.2                   py37_1  
+python                    3.7.3                h0371630_0  
+readline                  7.0                  h7b6447c_5  
+setuptools                46.1.3                   py37_0  
+sqlite                    3.31.1               h7b6447c_0  
+tk                        8.6.8                hbc83047_0  
+wheel                     0.34.2                   py37_0  
+xz                        5.2.5                h7b6447c_0  
+zlib                      1.2.11               h7b6447c_3  
+```
+
+The `dummy` venv created with `conda` seems including too many packages, but almost all of them are dependencies of `python==3.7.3`. In fact, there are only four packages as follows:
+
+```
+python                    3.7.3                h0371630_0  
+pip                       20.0.2                   py37_1  
+setuptools                46.1.3                   py37_0  
+wheel                     0.34.2                   py37_0  
+```
+
+These default installed packages are same as those installed in the venv created with `virtualenv`.
+
 # pip
 
 ## Basic commands
