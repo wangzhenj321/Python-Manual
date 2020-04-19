@@ -199,3 +199,5 @@ These default installed packages are same as those installed in the venv created
 
 - `search`
     - `pip search peppercorn`
+
+> `pip` defaults to installing Python packages to a system directory (such as `/usr/local/lib/python3.4`). This requires root access. `--user` makes `pip` install packages in your home directory instead, which doesn't require any special privileges. Typically `~/.local/`, or `%APPDATA%\Python` on Windows.
