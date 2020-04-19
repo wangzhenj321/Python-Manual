@@ -122,6 +122,43 @@ wheel                     0.34.2                   py37_0
 
 These default installed packages are same as those installed in the venv created with `virtualenv`.
 
+## Basic commands
+
+### List of basic commands
+
+| Commands | Description |
+| --- | --- |
+| `create` | Create a new conda environment from a list of specified packages |
+| `info` | Display information about current conda install |
+| `install` | Installs a list of packages into a specified conda environment |
+| `remove` | Remove a list of packages from a specified conda environment |
+| `uninstall` | Alias for conda remove |
+| `list` | List linked packages in a conda environment |
+| `search` | Search for packages and display associated information |
+| `update` | Updates conda packages to the latest compatible version |
+| `upgrade` | Alias for conda update |
+| `env` | - |
+
+### Common usage of basic commands
+
+- `create`
+    - `conda create -n dummy python==3.7.3`
+    - `conda create -n myenv --file package-list.txt`
+
+- `install`
+    - `conda install --file package-list.txt`
+
+- `list`
+    - `conda list`
+    - `conda list --export > package-list.txt`
+
+- `search`
+    - `conda search numpy=1.10.4=py27_1 --info`
+
+- `env`
+    - `conda env list`
+    - `conda env remove -n FOO`
+
 # pip
 
 ## Basic commands
