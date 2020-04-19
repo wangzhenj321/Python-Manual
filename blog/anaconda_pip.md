@@ -177,12 +177,12 @@ These default installed packages are same as those installed in the venv created
 ### Common usage of basic commands
 
 - `install`
-    - `pip install SomePackage`: latest version
-    - `pip install SomePackage==1.0.4`: specific version
-    - `pip install 'SomePackage>=1.0.4'`: minimum version
+    - `pip install SomePackage`
+    - `pip install SomePackage==1.0.4`
+    - `pip install 'SomePackage>=1.0.4'`
     - `pip install --upgrade SomePackage`
     - `pip install -r <requirements file>`
-    - `pip install --user SomePackage`: Install to the Python user install directory for your platform. Typically ~/.local/, or %APPDATA%\Python on Windows.
+    - `pip install --user SomePackage`
 
 - `uninstall`
     - `pip uninstall simplejson`
