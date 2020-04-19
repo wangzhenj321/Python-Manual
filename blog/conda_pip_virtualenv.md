@@ -111,7 +111,7 @@ xz                        5.2.5                h7b6447c_0
 zlib                      1.2.11               h7b6447c_3  
 ```
 
-The `dummy` venv created with `conda` seems including too many packages, but almost all of them are dependencies of `python==3.7.3`. In fact, there are only four packages as follows:
+The `dummy` venv created with `conda` seems including too many packages, but almost all of them are dependencies of `python==3.7.3`. In fact, there are only four independent packages as follows:
 
 ```
 python                    3.7.3                h0371630_0  
@@ -122,7 +122,7 @@ wheel                     0.34.2                   py37_0
 
 These default installed packages are same as those installed in the venv created with `virtualenv`.
 
-## Basic commands
+## Basic commands of `conda`
 
 ### List of basic commands
 
@@ -161,7 +161,7 @@ These default installed packages are same as those installed in the venv created
 
 # pip
 
-## Basic commands
+## Basic commands of `pip`
 
 ### List of basic commands
 
