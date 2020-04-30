@@ -12,9 +12,11 @@ The first step in using the `argparse` is creating an `ArgumentParser` object:
 >>> parser = argparse.ArgumentParser(description='Process some integers.')
 ```
 
+The `ArgumentParser` object will hold all the information necessary to parse the command line into Python data types.
+
 ## Step 2: Adding arguments
 
-The calls to `add_argument()` tell the `ArgumentParser` how to take the strings on the command line and turn them into objects.
+The calls to `add_argument()` tell the `ArgumentParser` how to take the strings on the command line and turn them into objects. This information is stored and used when `parse_args()` is called.
 
 ```python
 >>> parser.add_argument('integers', metavar='N', type=int, nargs='+',
