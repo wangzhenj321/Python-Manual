@@ -19,3 +19,7 @@ The module also offers three general purpose functions based on heaps.
 - `heapq.nsmallest(n, iterable, key=None)`
 
 > The latter two functions perform best for smaller values of n. For larger values, it is more efficient to use the `sorted()` function. Also, when `n==1`, it is more efficient to use the built-in `min()` and `max()` functions. If repeated usage of these functions is required, consider turning the iterable into an actual heap.
+
+## References
+
+1. [heapq — Heap queue algorithm](https://docs.python.org/3.7/library/heapq.html)
