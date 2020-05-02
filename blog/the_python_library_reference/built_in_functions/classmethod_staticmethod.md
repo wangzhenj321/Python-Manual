@@ -1,4 +1,4 @@
-## What is the difference between a function decorated with `@staticmethod` and one decorated with `@classmethod`? 
+## Difference between `@staticmethod` and `@classmethod` 
 
 Maybe a bit of example code will help: Notice the difference in the call signatures of `foo`, `class_foo` and `static_foo`:
 
@@ -130,72 +130,72 @@ class Test:
 
 1. When a member method calls @staticmethod foo
 
-用`self.foo()`、`self.__class__.foo()`或者class全称`Test.foo()`都可以：
+    用`self.foo()`、`self.__class__.foo()`或者class全称`Test.foo()`都可以：
 
-```python
-class Test:
-    @staticmethod
-    def foo():
-        print("foo")
+    ```python
+    class Test:
+        @staticmethod
+        def foo():
+            print("foo")
 
-    def bar(self):
-        self.foo()
+        def bar(self):
+            self.foo()
 
-    def baz(self):
-        self.__class__.foo()
+        def baz(self):
+            self.__class__.foo()
 
-    def qux(self):
-        Test.foo()
+        def qux(self):
+            Test.foo()
 
-t = Test()
-t.bar()  # Output: foo
-t.baz()  # Output: foo
-t.qux()  # Output: foo
-```
+    t = Test()
+    t.bar()  # Output: foo
+    t.baz()  # Output: foo
+    t.qux()  # Output: foo
+    ```
 
 2. When a @classmethod calls @staticmethod foo
 
-依葫芦画瓢，此时用`cls.foo()`或者class全称调用都行：
+    依葫芦画瓢，此时用`cls.foo()`或者class全称调用都行：
 
-```python
-class Test:
-    @staticmethod
-    def foo():
-        print("foo")
+    ```python
+    class Test:
+        @staticmethod
+        def foo():
+            print("foo")
 
-    @classmethod
-    def bar(cls):
-        cls.foo()  
+        @classmethod
+        def bar(cls):
+            cls.foo()
 
-    @classmethod
-    def baz(cls):
-        Test.foo() 
+        @classmethod
+        def baz(cls):
+            Test.foo()
 
-Test.bar()  # Output: foo                   
-Test.baz()  # Output: foo
-```
+    Test.bar()  # Output: foo
+    Test.baz()  # Output: foo
+    ```
 
 3. When another @staticmethod calls @staticmethod foo
 
-这种情况下，你既没有`self`也没有`cls`，所以你此时只能用class全称去调用。不用前缀直接调用是非法的：
+    这种情况下，你既没有`self`也没有`cls`，所以你此时只能用class全称去调用。不用前缀直接调用是非法的：
 
-```
-class Test:
-    @staticmethod
-    def foo():
-        print("foo")
+    ```python
+    class Test:
+        @staticmethod
+        def foo():
+            print("foo")
 
-    @staticmethod
-    def bar():
-        foo()  # WRONG 
+        @staticmethod
+        def bar():
+            foo()  # WRONG 
 
-    @staticmethod
-    def baz():
-        Test.foo()  # OK
+        @staticmethod
+        def baz():
+            Test.foo()  # OK
 
-Test.bar()  # NameError: name 'foo' is not defined                       
-Test.baz()  # Output: foo
-```
+    Test.bar()  # NameError: name 'foo' is not defined
+    Test.baz()  # Output: foo
+    ```
 
 总结一下就是：
 
