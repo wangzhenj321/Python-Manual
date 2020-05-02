@@ -205,5 +205,4 @@ class Test:
 ## References
 
 1. [What is the difference between @staticmethod and @classmethod?](https://stackoverflow.com/questions/136097/what-is-the-difference-between-staticmethod-and-classmethod)
-
 2. [Python: calling static methods within the same class / recursive static methods](http://yaoyao.codes/python/2020/03/23/python-calling-static-methods-within-the-same-class)
