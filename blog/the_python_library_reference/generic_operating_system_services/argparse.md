@@ -39,9 +39,7 @@ In a script, `parse_args()` will typically be called with no arguments, and the 
 
 ## `ArgumentParser` objects
 
-Create a new `ArgumentParser` object.
-
-> All parameters should be passed as keyword arguments.
+Create a new `ArgumentParser` object. All parameters should be passed as keyword arguments.
 
 | Parameters | Description |
 | --- | --- |
