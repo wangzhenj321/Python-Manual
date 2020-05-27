@@ -37,7 +37,7 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 In a script, `parse_args()` will typically be called with no arguments, and the `ArgumentParser` will automatically determine the command-line arguments from `sys.argv`.
 
-## `ArgumentParser` objects
+## `argparse.ArgumentParser` objects
 
 Create a new `ArgumentParser` object. All parameters should be passed as keyword arguments.
 
@@ -56,7 +56,7 @@ Create a new `ArgumentParser` object. All parameters should be passed as keyword
 | add_help | Add a `-h/--help` option to the parser (default: True) |
 | allow_abbrev | Allows long options to be abbreviated if the abbreviation is unambiguous. (default: True) |
 
-## The `add_argument()` method
+## The `ArgumentParser.add_argument()` method
 
 Define how a single command-line argument should be parsed.
 
@@ -74,7 +74,7 @@ Define how a single command-line argument should be parsed.
 | metavar | A name for the argument in usage messages. |
 | dest | The name of the attribute to be added to the object returned by `parse_args()`. |
 
-## The `parse_args()` method
+## The `ArgumentParser.parse_args()` method
 
 Convert argument strings to objects and assign them as attributes of the namespace. Return the populated namespace.
 
@@ -83,7 +83,7 @@ Convert argument strings to objects and assign them as attributes of the namespa
 | args | List of strings to parse. The default is taken from `sys.argv`. |
 | namespace | An object to take the attributes. The default is a new empty `Namespace` object. |
 
-### The `Namespace` object
+### The `argparse.Namespace` object
 
 Simple class used by default by `parse_args()` to create an object holding attributes and return it.
 
@@ -110,3 +110,35 @@ Simple class used by default by `parse_args()` to create an object holding attri
 >>> c.foo
 'BAR'
 ```
+
+## Other utilities
+
+### Sub-commands: `ArgumentParser.add_subparsers()`
+
+Many programs split up their functionality into a number of sub-commands, for example, the `svn` program can invoke sub-commands like `svn checkout`, `svn update`, and `svn commit`. Splitting up functionality this way can be a particularly good idea when a program performs several different functions which require different kinds of command-line arguments. `ArgumentParser` supports the creation of such sub-commands with the `add_subparsers()` method. The `add_subparsers()` method is normally called with no arguments and returns a special action object. This object has a single method, `add_parser()`, which takes a command name and any `ArgumentParser` constructor arguments, and returns an `ArgumentParser` object that can be modified as usual.
+
+| Parameters | Description |
+| --- | --- |
+| title | title for the sub-parser group in help output; by default "subcommands" if description is provided, otherwise uses title for positional arguments |
+| description | description for the sub-parser group in help output, by default `None` |
+| prog | usage information that will be displayed with sub-command help, by default the name of the program and any positional arguments before the subparser argument |
+| parser_class | class which will be used to create sub-parser instances, by default the class of the current parser (e.g. ArgumentParser) |
+| action | the basic type of action to be taken when this argument is encountered at the command line |
+| dest | name of the attribute under which sub-command name will be stored; by default `None` and no value is stored |
+| required | Whether or not a subcommand must be provided, by default `False` (added in 3.7) |
+| help | help for sub-parser group in help output, by default `None` |
+| metavar | string presenting available sub-commands in help; by default it is None and presents sub-commands in form {cmd1, cmd2, ..} |
+
+### Argument groups: `ArgumentParser.add_argument_group()`
+
+By default, `ArgumentParser` groups command-line arguments into "positional arguments" and "optional arguments" when displaying help messages. When there is a better conceptual grouping of arguments than this default one, appropriate groups can be created using the `add_argument_group()` method. When an argument is added to the group, the parser treats it just like a normal argument, but displays the argument in a separate group for help messages. Note that any arguments not in your user-defined groups will end up back in the usual "positional arguments" and "optional arguments" sections.
+
+### Parser defaults
+
+- `ArgumentParser.set_defaults()`
+
+- `ArgumentParser.get_default()`
+
+### Printing help
+
+- `ArgumentParser.print_help()`
