@@ -74,9 +74,6 @@ Define how a single command-line argument should be parsed.
 | metavar | A name for the argument in usage messages. |
 | dest | The name of the attribute to be added to the object returned by `parse_args()`. |
 
-> - **name or flags** When `parse_args()` is called, optional arguments will be identified by the `-` prefix, and the remaining arguments will be assumed to be positional.
-> - **nargs** Note that `nargs=1` produces a list of one item. This is different from the default, in which the item is produced by itself.
-
 ## The `parse_args()` method
 
 Convert argument strings to objects and assign them as attributes of the namespace. Return the populated namespace.
