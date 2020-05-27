@@ -2,9 +2,9 @@ The program defines what arguments it requires, and `argparse` will figure out h
 
 > The `argparse` module also automatically generates help and usage messages and issues errors when users give the program invalid arguments.
 
-# Workflow
+## Example
 
-## Step 1: Creating a parser
+### Step 1: Creating a parser
 
 The first step in using the `argparse` is creating an `ArgumentParser` object:
 
@@ -14,7 +14,7 @@ The first step in using the `argparse` is creating an `ArgumentParser` object:
 
 The `ArgumentParser` object will hold all the information necessary to parse the command line into Python data types.
 
-## Step 2: Adding arguments
+### Step 2: Adding arguments
 
 The calls to `add_argument()` tell the `ArgumentParser` how to take the strings on the command line and turn them into objects. This information is stored and used when `parse_args()` is called.
 
@@ -26,7 +26,7 @@ The calls to `add_argument()` tell the `ArgumentParser` how to take the strings 
 ...                     help='sum the integers (default: find the max)')
 ```
 
-## Step 3: Parsing arguments
+### Step 3: Parsing arguments
 
 `ArgumentParser` parses arguments through the `parse_args()` method.
 
@@ -37,9 +37,7 @@ Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 
 In a script, `parse_args()` will typically be called with no arguments, and the `ArgumentParser` will automatically determine the command-line arguments from `sys.argv`.
 
-# Attributes
-
-## `class argparse.ArgumentParser`
+## `ArgumentParser` objects
 
 Create a new `ArgumentParser` object.
 
@@ -60,7 +58,7 @@ Create a new `ArgumentParser` object.
 | add_help | Add a `-h/--help` option to the parser (default: True) |
 | allow_abbrev | Allows long options to be abbreviated if the abbreviation is unambiguous. (default: True) |
 
-## `ArgumentParser.add_argument`
+## The `add_argument()` method
 
 Define how a single command-line argument should be parsed.
 
@@ -81,7 +79,7 @@ Define how a single command-line argument should be parsed.
 > - **name or flags** When `parse_args()` is called, optional arguments will be identified by the `-` prefix, and the remaining arguments will be assumed to be positional.
 > - **nargs** Note that `nargs=1` produces a list of one item. This is different from the default, in which the item is produced by itself.
 
-## `ArgumentParser.parse_args`
+## The `parse_args()` method
 
 Convert argument strings to objects and assign them as attributes of the namespace. Return the populated namespace.
 
@@ -90,7 +88,7 @@ Convert argument strings to objects and assign them as attributes of the namespa
 | args | List of strings to parse. The default is taken from `sys.argv`. |
 | namespace | An object to take the attributes. The default is a new empty `Namespace` object. |
 
-## `class argparse.Namespace`
+### The `Namespace` object
 
 Simple class used by default by `parse_args()` to create an object holding attributes and return it.
 
