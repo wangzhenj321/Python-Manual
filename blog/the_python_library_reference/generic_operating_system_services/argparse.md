@@ -35,6 +35,8 @@ The calls to `add_argument()` tell the `ArgumentParser` how to take the strings 
 Namespace(accumulate=<built-in function sum>, integers=[7, -1, 42])
 ```
 
+In a script, `parse_args()` will typically be called with no arguments, and the `ArgumentParser` will automatically determine the command-line arguments from `sys.argv`.
+
 # Attributes
 
 ## `class argparse.ArgumentParser`
