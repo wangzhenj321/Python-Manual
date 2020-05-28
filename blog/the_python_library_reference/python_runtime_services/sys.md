@@ -1,10 +1,8 @@
-**This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.**
+This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter. It is always available.
 
----
+- `sys.argv`
 
-- [`sys.argv`](https://docs.python.org/3/library/sys.html#sys.argv)
-
-- [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path)
+- `sys.path`
 
     A list of strings that specifies the search path for modules. **Initialized from the environment variable `PYTHONPATH`, plus an installation-dependent default.**
     
@@ -39,4 +37,4 @@
         /home/wang/miniconda3/lib/python3.7/site-packages
         ```
 
-- [`sys.platform`](https://docs.python.org/3/library/sys.html#sys.platform)
+- `sys.platform`
