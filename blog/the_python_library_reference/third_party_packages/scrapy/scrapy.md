@@ -29,7 +29,29 @@ tutorial/
 
 Spiders are the place where you define the custom behaviour for crawling and parsing pages for a particular site (or, in some cases, a group of sites).
 
+- `classscrapy.spiders.Spider`
 
+    1. `name`
+    2. `allowed_domains` -> `OffsiteMiddleware`
+    3. `start_urls`
+    4. `custom_settings`
+    5. `crawler` -> `from_crawler()`
+    6. `settings`
+    7. `logger`
+    8. `from_crawler(crawler, *args, **kwargs)`
+    9. `start_requests()`
+    10. `parse(response)`
+    11. `log(message[, level, component])`
+    12. `closed(reason)`
+
+- Spider arguments -> `-a`
+
+- `classscrapy.spiders.CrawlSpider`
+
+    1. `rules` -> `Rule`
+        - `classscrapy.spiders.Rule`
+            1. `link_extractor`
+    2. `parse_start_url(response, **kwargs)`
 
 ## Items
 
