@@ -19,13 +19,13 @@
 
 Web应用开发可以说是目前软件开发中最重要的部分。Web开发也经历了好几个阶段：
 
-- 静态Web页面：由文本编辑器直接编辑并生成静态的HTML页面，如果要修改Web页面的内容，就需要再次编辑HTML源文件，早期的互联网Web页面就是静态的；
+1. 静态Web页面：由文本编辑器直接编辑并生成静态的HTML页面，如果要修改Web页面的内容，就需要再次编辑HTML源文件，早期的互联网Web页面就是静态的；
 
-- CGI：由于静态Web页面无法与用户交互，比如用户填写了一个注册表单，静态Web页面就无法处理。要处理用户发送的动态数据，出现了Common Gateway Interface，简称CGI，用C/C++编写。
+2. CGI：由于静态Web页面无法与用户交互，比如用户填写了一个注册表单，静态Web页面就无法处理。要处理用户发送的动态数据，出现了Common Gateway Interface，简称CGI，用C/C++编写。
 
-- ASP/JSP/PHP：由于Web应用特点是修改频繁，用C/C++这样的低级语言非常不适合Web开发，而脚本语言由于开发效率高，与HTML结合紧密，因此，迅速取代了CGI模式。ASP是微软推出的用VBScript脚本编程的Web开发技术，而JSP用Java来编写脚本，PHP本身则是开源的脚本语言。
+3. ASP/JSP/PHP：由于Web应用特点是修改频繁，用C/C++这样的低级语言非常不适合Web开发，而脚本语言由于开发效率高，与HTML结合紧密，因此，迅速取代了CGI模式。ASP是微软推出的用VBScript脚本编程的Web开发技术，而JSP用Java来编写脚本，PHP本身则是开源的脚本语言。
 
-- MVC：为了解决直接用脚本语言嵌入HTML导致的可维护性差的问题，Web应用也引入了Model-View-Controller的模式，来简化Web开发。ASP发展为ASP.Net，JSP和PHP也有一大堆MVC框架。
+4. MVC：为了解决直接用脚本语言嵌入HTML导致的可维护性差的问题，Web应用也引入了Model-View-Controller的模式，来简化Web开发。ASP发展为ASP.Net，JSP和PHP也有一大堆MVC框架。
 
 目前，Web开发技术仍在快速发展中，异步开发、新的MVVM前端技术层出不穷。
 
@@ -49,7 +49,7 @@ Python有上百种Web开发框架，有很多成熟的模板技术，选择Pytho
 
 我们需要在浏览器很方便地调试我们的Web应用，而Chrome提供了一套完整地调试工具，非常适合Web开发。
 
-安装好Chrome浏览器后，打开Chrome，在菜单中选择“视图”，“开发者”，“开发者工具”，就可以显示开发者工具：
+安装好Chrome浏览器后，打开Chrome，在菜单中选择"视图"，"开发者"，"开发者工具"，就可以显示开发者工具：
 
 <img src="../img/Web开发/HTTP协议简介_1.jpeg">
 
@@ -57,7 +57,7 @@ Elements显示网页的结构，Network显示浏览器和服务器的通信。�
 
 <img src="../img/Web开发/HTTP协议简介_2.jpeg">
 
-当我们在地址栏输入www.sina.com.cn时，浏览器将显示新浪的首页。在这个过程中，浏览器都干了哪些事情呢？通过Network的记录，我们就可以知道。在Network中，定位到第一条记录，点击，右侧将显示Request Headers，点击右侧的view source，我们就可以看到浏览器发给新浪服务器的请求：
+当我们在地址栏输入`www.sina.com.cn`时，浏览器将显示新浪的首页。在这个过程中，浏览器都干了哪些事情呢？通过Network的记录，我们就可以知道。在Network中，定位到第一条记录，点击，右侧将显示Request Headers，点击右侧的view source，我们就可以看到浏览器发给新浪服务器的请求：
 
 <img src="../img/Web开发/HTTP协议简介_3.jpeg">
 
@@ -109,9 +109,9 @@ HTTP响应的Body就是HTML源码，我们在菜单栏选择"视图"，"开发�
 
 方法：GET还是POST，GET仅请求资源，POST会附带用户数据；
 
-路径：/full/url/path；
+路径：`/full/url/path`；
 
-域名：由Host头指定：Host: www.sina.com.cn
+域名：由Host头指定：`Host: www.sina.com.cn`
 
 以及其他相关的Header；
 
@@ -121,7 +121,7 @@ HTTP响应的Body就是HTML源码，我们在菜单栏选择"视图"，"开发�
 
 响应代码：200表示成功，3xx表示重定向，4xx表示客户端发送的请求有错误，5xx表示服务器端处理时发生了错误；
 
-响应类型：由Content-Type指定，例如：Content-Type: text/html;charset=utf-8表示响应类型是HTML文本，并且编码是UTF-8，Content-Type: image/jpeg表示响应类型是JPEG格式的图片；
+响应类型：由Content-Type指定，例如：`Content-Type: text/html;charset=utf-8`表示响应类型是HTML文本，并且编码是UTF-8，`Content-Type: image/jpeg`表示响应类型是JPEG格式的图片；
 
 以及其他相关的Header；
 
@@ -174,7 +174,7 @@ body data goes here...
 
 HTTP响应如果包含body，也是通过\r\n\r\n来分隔的。请再次注意，Body的数据类型由Content-Type头来确定，如果是网页，Body就是文本，如果是图片，Body就是图片的二进制数据。
 
-当存在Content-Encoding时，Body数据是被压缩的，最常见的压缩方式是gzip，所以，看到Content-Encoding: gzip时，需要将Body数据先解压缩，才能得到真正的数据。压缩的目的在于减少Body的大小，加快网络传输。
+当存在Content-Encoding时，Body数据是被压缩的，最常见的压缩方式是gzip，所以，看到`Content-Encoding: gzip`时，需要将Body数据先解压缩，才能得到真正的数据。压缩的目的在于减少Body的大小，加快网络传输。
 
 ## HTML简介
 
@@ -184,7 +184,7 @@ HTML长什么样？上次我们看了新浪首页的HTML源码，如果仔细数
 
 所以，学HTML，就不要指望从新浪入手了。我们来看看最简单的HTML长什么样：
 
-```
+```html
 <html>
 <head>
   <title>Hello</title>
@@ -205,7 +205,7 @@ HTML文档就是一系列的Tag组成，最外层的Tag是`<html>`。规范的HT
 
 CSS是Cascading Style Sheets（层叠样式表）的简称，CSS用来控制HTML里的所有元素如何展现，比如，给标题元素`<h1>`加一个样式，变成48号字体，灰色，带阴影：
 
-```
+```html
 <html>
 <head>
   <title>Hello</title>
@@ -231,7 +231,7 @@ CSS是Cascading Style Sheets（层叠样式表）的简称，CSS用来控制HTML
 
 JavaScript虽然名称有个Java，但它和Java真的一点关系没有。JavaScript是为了让HTML具有交互性而作为脚本语言添加的，JavaScript既可以内嵌到HTML中，也可以从外部链接到HTML中。如果我们希望当用户点击标题时把标题变成红色，就必须通过JavaScript来实现：
 
-```
+```html
 <html>
 <head>
   <title>Hello</title>
@@ -322,7 +322,7 @@ start_response('200 OK', [('Content-Type', 'text/html')])
 
 我们先编写hello.py，实现Web应用程序的WSGI处理函数：
 
-```
+```python
 # hello.py
 
 def application(environ, start_response):
@@ -332,7 +332,7 @@ def application(environ, start_response):
 
 然后，再编写一个server.py，负责启动WSGI服务器，加载`application()`函数：
 
-```
+```python
 # server.py
 # 从wsgiref模块导入:
 from wsgiref.simple_server import make_server
@@ -364,7 +364,7 @@ httpd.serve_forever()
 
 如果你觉得这个Web应用太简单了，可以稍微改造一下，从environ里读取PATH_INFO，这样可以显示更加动态的内容：
 
-```
+```python
 # hello.py
 
 def application(environ, start_response):
@@ -395,7 +395,7 @@ def application(environ, start_response):
 
 一个最简单的想法是从environ变量里取出HTTP请求的信息，然后逐个判断：
 
-```
+```python
 def application(environ, start_response):
     method = environ['REQUEST_METHOD']
     path = environ['PATH_INFO']
@@ -430,7 +430,7 @@ $ pip install flask
 
 Flask通过Python的装饰器在内部自动地把URL和函数给关联起来，所以，我们写出来的代码就像这样：
 
-```
+```python
 from flask import Flask
 from flask import request
 
@@ -536,7 +536,7 @@ MVC中的Model在哪？Model是用来传给View的，这样View在替换变量�
 
 现在，我们把上次直接输出字符串作为HTML的例子用高端大气上档次的MVC模式改写一下：
 
-```
+```python
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
