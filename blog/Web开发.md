@@ -468,21 +468,21 @@ $ python app.py
 
 打开浏览器，输入首页地址`http://localhost:5000/`：
 
-<img src="../img/Web开发/使用Web框架_1.jpeg">
+<img src="../img/Web开发/使用Web框架_1.png">
 
 首页显示正确！
 
 再在浏览器地址栏输入`http://localhost:5000/signin`，会显示登录表单：
 
-<img src="../img/Web开发/使用Web框架_2.jpeg">
+<img src="../img/Web开发/使用Web框架_2.png">
 
 输入预设的用户名admin和口令password，登录成功：
 
-<img src="../img/Web开发/使用Web框架_3.jpeg">
+<img src="../img/Web开发/使用Web框架_3.png">
 
 输入其他错误的用户名和口令，登录失败：
 
-<img src="../img/Web开发/使用Web框架_4.jpeg">
+<img src="../img/Web开发/使用Web框架_4.png">
 
 实际的Web App应该拿到用户名和口令后，去数据库查询再比对，来判断用户是否能登录成功。
 
@@ -516,7 +516,7 @@ Web框架把我们从WSGI中拯救出来了。现在，我们只需要不断地�
 
 使用模板，我们需要预先准备一个HTML文档，这个HTML文档不是普通的HTML，而是嵌入了一些变量和指令，然后，根据我们传入的数据，替换后，得到最终的HTML，发送给用户：
 
-<img src="../img/Web开发/使用模板_1.jpeg">
+<img src="../img/Web开发/使用模板_1.png">
 
 这就是传说中的MVC：Model-View-Controller，中文名“模型-视图-控制器”。
 
@@ -626,11 +626,11 @@ $ pip install jinja2
 
 最后，一定要把模板放到正确的templates目录下，templates和app.py在同级目录下：
 
-<img src="../img/Web开发/使用模板_2.jpeg">
+<img src="../img/Web开发/使用模板_2.png">
 
 启动python app.py，看看使用模板的页面效果：
 
-<img src="../img/Web开发/使用模板_3.jpeg">
+<img src="../img/Web开发/使用模板_3.png">
 
 通过MVC，我们在Python代码中处理M：Model和C：Controller，而V：View是通过模板处理的，这样，我们就成功地把Python代码和HTML代码最大限度地分离了。
 
