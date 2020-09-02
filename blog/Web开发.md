@@ -75,7 +75,7 @@ GET表示一个读取请求，将从服务器获得网页数据，/表示URL的�
 Host: www.sina.com.cn
 ```
 
-表示请求的域名是www.sina.com.cn。如果一台服务器有多个网站，服务器就需要通过Host来区分浏览器请求的是哪个网站。
+表示请求的域名是 www.sina.com.cn 。如果一台服务器有多个网站，服务器就需要通过Host来区分浏览器请求的是哪个网站。
 
 继续往下找到Response Headers，点击view source，显示服务器返回的原始响应数据：
 
@@ -93,7 +93,7 @@ HTTP响应分为Header和Body两部分（Body是可选项），我们在Network�
 Content-Type: text/html
 ```
 
-Content-Type指示响应的内容，这里是text/html表示HTML网页。请注意，浏览器就是依靠Content-Type来判断响应的内容是网页还是图片，是视频还是音乐。浏览器并不靠URL来判断响应的内容，所以，即使URL是http://example.com/abc.jpg，它也不一定就是图片。
+Content-Type指示响应的内容，这里是text/html表示HTML网页。请注意，浏览器就是依靠Content-Type来判断响应的内容是网页还是图片，是视频还是音乐。浏览器并不靠URL来判断响应的内容，所以，即使URL是 http://example.com/abc.jpg ，它也不一定就是图片。
 
 HTTP响应的Body就是HTML源码，我们在菜单栏选择“视图”，“开发者”，“查看网页源码”就可以在浏览器中直接查看HTML源码：
 
@@ -131,7 +131,7 @@ HTTP响应的Body就是HTML源码，我们在菜单栏选择“视图”，“�
 
 Web采用的HTTP协议采用了非常简单的请求-响应模式，从而大大简化了开发。当我们编写一个页面时，我们只需要在HTTP响应中把HTML发送出去，不需要考虑如何附带图片、视频等，浏览器如果需要请求图片和视频，它会发送另一个HTTP请求，因此，一个HTTP请求只处理一个资源。
 
-HTTP协议同时具备极强的扩展性，虽然浏览器请求的是http://www.sina.com.cn/的首页，但是新浪在HTML中可以链入其他服务器的资源，比如<img src="http://i1.sinaimg.cn/home/2013/1008/U8455P30DT20131008135420.png">，从而将请求压力分散到各个服务器上，并且，一个站点可以链接到其他站点，无数个站点互相链接起来，就形成了World Wide Web，简称“三达不溜”（WWW）。
+HTTP协议同时具备极强的扩展性，虽然浏览器请求的是 http://www.sina.com.cn/ 的首页，但是新浪在HTML中可以链入其他服务器的资源，比如<img src="http://i1.sinaimg.cn/home/2013/1008/U8455P30DT20131008135420.png">，从而将请求压力分散到各个服务器上，并且，一个站点可以链接到其他站点，无数个站点互相链接起来，就形成了World Wide Web，简称“三达不溜”（WWW）。
 
 ### HTTP格式
 
